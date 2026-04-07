@@ -110,5 +110,49 @@ export const cities: City[] = [
     marketAngle:
       "A premium customer experience starts before the crew arrives, and that makes lead handling quality especially important.",
     nearby: ["richmond", "williamsburg", "norfolk"]
+  },
+  {
+    slug: "alexandria",
+    name: "Alexandria",
+    state: "VA",
+    region: "Northern Virginia",
+    intro:
+      "Alexandria service businesses compete in a fast-moving market where buyers expect quick answers and polished communication from the first call.",
+    marketAngle:
+      "If your office response lags or after-hours leads sit untouched, local homeowners and property managers move on quickly.",
+    nearby: ["fairfax", "arlington", "woodbridge"]
+  },
+  {
+    slug: "fairfax",
+    name: "Fairfax",
+    state: "VA",
+    region: "Northern Virginia",
+    intro:
+      "Fairfax contractors operate in a competitive service market where strong responsiveness and a professional customer experience are expected.",
+    marketAngle:
+      "The businesses that answer faster and follow up harder usually win more of the same demand without increasing ad spend.",
+    nearby: ["alexandria", "ashburn", "leesburg"]
+  },
+  {
+    slug: "roanoke",
+    name: "Roanoke",
+    state: "VA",
+    region: "Southwest Virginia",
+    intro:
+      "Roanoke service businesses often grow on reputation, referrals, and speed, which makes every missed call more expensive than it looks.",
+    marketAngle:
+      "A tighter system helps local operators protect demand when the phone, office, and field all pull in different directions.",
+    nearby: ["lynchburg", "charlottesville", "fredericksburg"]
+  },
+  {
+    slug: "fredericksburg",
+    name: "Fredericksburg",
+    state: "VA",
+    region: "Central Virginia",
+    intro:
+      "Fredericksburg service companies need a cleaner way to handle leads, estimates, and booked work as local competition tightens.",
+    marketAngle:
+      "When callbacks are slow and quotes sit too long, the revenue usually lands with a more responsive competitor.",
+    nearby: ["woodbridge", "alexandria", "richmond"]
   }
 ];

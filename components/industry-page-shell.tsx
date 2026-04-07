@@ -9,6 +9,7 @@ import { FaqSection } from "@/components/faq-section";
 import { ContactCta } from "@/components/contact-cta";
 import { siteConfig } from "@/data/site";
 import { cities } from "@/data/cities";
+import { getProblemsForIndustry } from "@/lib/content";
 
 type IndustryPageShellProps = {
   industry: Industry;
@@ -16,6 +17,7 @@ type IndustryPageShellProps = {
 
 export function IndustryPageShell({ industry }: IndustryPageShellProps) {
   const locationLinks = cities.slice(0, 4);
+  const relatedProblems = getProblemsForIndustry(industry.slug, 3);
 
   return (
     <>
@@ -171,6 +173,47 @@ export function IndustryPageShell({ industry }: IndustryPageShellProps) {
           </div>
         </div>
       </section>
+
+      {relatedProblems.length ? (
+        <section className="section-space dark-section">
+          <div className="container-shell">
+            <div className="surface-outline p-8">
+              <span className="section-eyebrow">Problem pages</span>
+              <div className="mt-6 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+                <div className="max-w-2xl">
+                  <h2 className="text-3xl font-semibold tracking-tight text-text">
+                    Related revenue problems for {industry.name.toLowerCase()}{" "}
+                    businesses
+                  </h2>
+                  <p className="mt-4 text-lg leading-8 text-muted">
+                    These pages go deeper on the specific breakdowns that most
+                    often cost {industry.name.toLowerCase()} companies booked
+                    jobs.
+                  </p>
+                </div>
+                <ButtonLink
+                  href="/demo"
+                  variant="secondary"
+                  className="border-white/10 bg-white/[0.04] text-text shadow-none backdrop-blur-xl hover:bg-white/[0.08] hover:text-blue-3"
+                >
+                  View demo
+                </ButtonLink>
+              </div>
+              <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+                {relatedProblems.map((problem) => (
+                  <Link
+                    key={problem.slug}
+                    href={`/solutions/${problem.slug}`}
+                    className="dark-link-card"
+                  >
+                    {problem.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      ) : null}
 
       <FaqSection
         eyebrow="FAQs"

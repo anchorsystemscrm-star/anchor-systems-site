@@ -33,3 +33,20 @@ export type City = {
   marketAngle: string;
   nearby: string[];
 };
+
+export type ProblemSolution = {
+  slug: string;
+  name: string;
+  shortLabel: string;
+  industrySlug: string;
+  seoTitle: string;
+  metaDescription: string;
+  heroTitle: string;
+  heroDescription: string;
+  intro: string;
+  painPoints: string[];
+  solutionPoints: string[];
+  featureBlocks: string[];
+  outcomes: string[];
+  faqs: FaqItem[];
+};

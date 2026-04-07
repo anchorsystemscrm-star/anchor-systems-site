@@ -7,6 +7,7 @@ import { ButtonLink } from "@/components/button-link";
 import { ContactCta } from "@/components/contact-cta";
 import { FaqSection } from "@/components/faq-section";
 import { siteConfig } from "@/data/site";
+import { getProblemsForIndustry } from "@/lib/content";
 
 type LocationPageShellProps = {
   city: City;
@@ -20,6 +21,7 @@ export function LocationPageShell({
   relatedCities
 }: LocationPageShellProps) {
   const localHeadline = `${industry.name} CRM in ${city.name}, ${city.state}`;
+  const industryProblems = getProblemsForIndustry(industry.slug, 2);
 
   return (
     <>
@@ -187,6 +189,38 @@ export function LocationPageShell({
           </div>
         </div>
       </section>
+
+      {industryProblems.length ? (
+        <section className="section-space dark-section">
+          <div className="container-shell">
+            <div className="surface-outline p-8">
+              <span className="section-eyebrow">Problem pages</span>
+              <h2 className="mt-5 text-3xl font-semibold tracking-tight text-text">
+                Related pages for the biggest conversion leaks
+              </h2>
+              <p className="mt-4 max-w-2xl text-lg leading-8 text-muted">
+                These pages focus on the specific response and follow-up problems
+                that most often cost {city.name} {industry.name.toLowerCase()}{" "}
+                businesses booked work.
+              </p>
+              <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+                {industryProblems.map((problem) => (
+                  <Link
+                    key={problem.slug}
+                    href={`/locations/${city.slug}/solutions/${problem.slug}`}
+                    className="dark-link-card"
+                  >
+                    {problem.shortLabel} in {city.name}
+                  </Link>
+                ))}
+                <Link href="/demo" className="dark-link-card">
+                  Book a demo walkthrough
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+      ) : null}
 
       <FaqSection
         eyebrow="Local FAQs"

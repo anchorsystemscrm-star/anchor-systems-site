@@ -1,5 +1,6 @@
 import { cities } from "@/data/cities";
 import { industries } from "@/data/industries";
+import { problemSolutions, solutionLocationCitySlugs } from "@/data/solutions";
 import type { City } from "@/data/types";
 
 export function getIndustryBySlug(slug: string) {
@@ -25,6 +26,25 @@ export function getLocationStaticParams() {
   );
 }
 
+export function getProblemBySlug(slug: string) {
+  return problemSolutions.find((problem) => problem.slug === slug);
+}
+
+export function getProblemStaticParams() {
+  return problemSolutions.map((problem) => ({
+    problemSlug: problem.slug
+  }));
+}
+
+export function getLocationProblemStaticParams() {
+  return solutionLocationCitySlugs.flatMap((citySlug) =>
+    problemSolutions.map((problem) => ({
+      citySlug,
+      problemSlug: problem.slug
+    }))
+  );
+}
+
 export function getRelatedCities(citySlug: string, limit = 3) {
   const city = getCityBySlug(citySlug);
 
@@ -44,6 +64,44 @@ export function getFeaturedIndustries(limit = 6) {
 
 export function getFeaturedCities(limit = 6) {
   return cities.slice(0, limit);
+}
+
+export function getFeaturedProblems(limit = 6) {
+  return problemSolutions.slice(0, limit);
+}
+
+export function getProblemsForIndustry(industrySlug: string, limit?: number) {
+  const matches = problemSolutions.filter(
+    (problem) => problem.industrySlug === industrySlug
+  );
+
+  return typeof limit === "number" ? matches.slice(0, limit) : matches;
+}
+
+export function getProblemLocationCities() {
+  return solutionLocationCitySlugs
+    .map((slug) => getCityBySlug(slug))
+    .filter((value): value is City => Boolean(value));
+}
+
+export function getRelatedProblemCities(currentCitySlug: string, limit = 3) {
+  const problemCities = getProblemLocationCities().filter(
+    (city) => city.slug !== currentCitySlug
+  );
+  const nearby = getRelatedCities(currentCitySlug, 6).filter((city) =>
+    solutionLocationCitySlugs.includes(
+      city.slug as (typeof solutionLocationCitySlugs)[number]
+    )
+  );
+
+  const ordered = [
+    ...nearby,
+    ...problemCities.filter(
+      (city) => !nearby.some((nearbyCity) => nearbyCity.slug === city.slug)
+    )
+  ];
+
+  return ordered.slice(0, limit);
 }
 
 export function buildLocationFaqs(citySlug: string, industrySlug: string) {

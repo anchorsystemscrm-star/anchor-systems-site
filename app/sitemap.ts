@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 
 import { cities } from "@/data/cities";
 import { industries } from "@/data/industries";
+import { problemSolutions, solutionLocationCitySlugs } from "@/data/solutions";
 import { absoluteUrl } from "@/lib/seo";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -40,5 +41,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   );
 
-  return [...staticEntries, ...industryEntries, ...locationEntries];
+  const solutionEntries = problemSolutions.map((problem) => ({
+    url: absoluteUrl(`/solutions/${problem.slug}`),
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.82
+  }));
+
+  const locationSolutionEntries = solutionLocationCitySlugs.flatMap((citySlug) =>
+    problemSolutions.map((problem) => ({
+      url: absoluteUrl(`/locations/${citySlug}/solutions/${problem.slug}`),
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.68
+    }))
+  );
+
+  return [
+    ...staticEntries,
+    ...industryEntries,
+    ...locationEntries,
+    ...solutionEntries,
+    ...locationSolutionEntries
+  ];
 }

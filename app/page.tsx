@@ -16,6 +16,7 @@ import { industries } from "@/data/industries";
 import { pricingPlan } from "@/data/pricing";
 import { siteConfig } from "@/data/site";
 import { operatorSignals } from "@/data/testimonials";
+import { getFeaturedProblems } from "@/lib/content";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
@@ -26,6 +27,7 @@ export const metadata = buildMetadata({
 });
 
 export default function HomePage() {
+  const featuredProblems = getFeaturedProblems(6);
   const schema = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -96,6 +98,28 @@ export default function HomePage() {
         features={platformFeatures}
         theme="dark"
       />
+
+      <section className="section-space light-section">
+        <div className="container-shell">
+          <SectionHeading
+            eyebrow="High-intent pages"
+            title="Start with the revenue leaks that usually cost the most"
+            description="These pages go straight at the problems most service businesses feel first: missed calls, slow follow-up, after-hours gaps, and weak visibility into which leads still need action."
+            theme="light"
+          />
+          <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+            {featuredProblems.map((problem) => (
+              <Link
+                key={problem.slug}
+                href={`/solutions/${problem.slug}`}
+                className="light-link-card"
+              >
+                {problem.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <section className="section-space light-section">
         <div className="container-shell">
