@@ -39,9 +39,10 @@ export function ProblemPageShell({
                 {problem.heroTitle}
               </h1>
               <p className="mt-6 max-w-3xl text-lg leading-8 text-muted">
-                {problem.heroDescription} If this part of the workflow is weak,
-                the job usually does not come back later. It goes to the company
-                that moved first.
+                {problem.heroDescription} This is not a hypothetical leak. Jobs
+                are lost every day when calls are missed, callbacks are slow,
+                and follow-up drifts long enough for the buyer to choose someone
+                else.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <ButtonLink href={siteConfig.bookingLink} external>
@@ -81,10 +82,11 @@ export function ProblemPageShell({
           <div className="surface-card-light p-8">
             <span className="section-eyebrow">The problem</span>
             <h2 className="mt-5 text-3xl font-semibold tracking-tight text-ink">
-              {problem.name} is really a booked-revenue problem
+              {problem.name} is a daily revenue leak
             </h2>
             <p className="mt-4 text-lg leading-8 text-ink-soft">
-              {problem.intro}
+              {problem.intro} If the process stays loose, the cost shows up in
+              booked work you never recover.
             </p>
           </div>
 
@@ -103,7 +105,7 @@ export function ProblemPageShell({
           <div>
             <span className="section-eyebrow">How Anchor Systems solves it</span>
             <h2 className="mt-5 text-3xl font-semibold tracking-tight text-text">
-              A tighter operating system for {industry.name.toLowerCase()} teams
+              Fix the leak before more jobs disappear
             </h2>
             <div className="mt-6 space-y-4">
               {problem.solutionPoints.map((point) => (
@@ -117,7 +119,7 @@ export function ProblemPageShell({
           <div>
             <span className="section-eyebrow">Feature blocks</span>
             <h2 className="mt-5 text-3xl font-semibold tracking-tight text-text">
-              What the platform gives your team
+              What your team gets when this is finally handled right
             </h2>
             <div className="mt-6 space-y-4">
               {problem.featureBlocks.map((block) => (
@@ -139,12 +141,13 @@ export function ProblemPageShell({
             <div className="mt-6 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
               <div className="max-w-2xl">
                 <h2 className="text-3xl font-semibold tracking-tight text-ink">
-                  Explore location and industry pages tied to this problem
+                  Keep moving through the pages tied to this revenue problem
                 </h2>
                 <p className="mt-4 text-lg leading-8 text-ink-soft">
                   These pages support the same core theme from different angles:
                   local intent, trade-specific intent, and problem-specific
-                  buying intent.
+                  buying intent. If this issue exists in your business, the next
+                  step is to see how it shows up in your market and your trade.
                 </p>
               </div>
               <ButtonLink href="/pricing" variant="secondary">
@@ -210,15 +213,15 @@ export function ProblemPageShell({
       <FaqSection
         eyebrow="Problem FAQs"
         title={`Questions about ${problem.shortLabel}`}
-        description="These are the questions owners ask when they know leads are slipping but need a cleaner fix than hiring more admin staff."
+        description="These are the questions owners ask when they know jobs are being lost right now and need a cleaner fix than adding more admin staff."
         items={problem.faqs}
         theme="dark"
       />
 
       <CtaBanner
         eyebrow="Book the walkthrough"
-        title={`If ${problem.shortLabel.toLowerCase()} is weak, revenue is leaking.`}
-        description="Book the demo and we will show where this problem is costing your business jobs, how Anchor Systems fixes it, and how fast you can put a tighter system in place."
+        title={`If ${problem.shortLabel.toLowerCase()} is weak, you are losing money every day.`}
+        description="Book the demo and we will show exactly where this problem is costing your business jobs, how Anchor Systems fixes it, and how quickly you can stop the leak."
         primaryHref={siteConfig.bookingLink}
         primaryLabel="Book Demo"
         secondaryHref="/demo"
@@ -226,8 +229,8 @@ export function ProblemPageShell({
       />
 
       <ContactCta
-        title={`Ready to fix ${problem.shortLabel.toLowerCase()} before more jobs are lost?`}
-        description="Anchor Systems helps service businesses close the gaps between the phone call, the follow-up, and the booked job so more revenue actually makes it through the system."
+        title={`Do not let ${problem.shortLabel.toLowerCase()} cost you another day of jobs.`}
+        description="Anchor Systems helps service businesses close the gaps between the phone call, the follow-up, and the booked job so more of the revenue you generate actually gets collected."
       />
     </>
   );

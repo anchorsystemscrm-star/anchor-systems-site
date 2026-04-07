@@ -39,15 +39,16 @@ export function LocationPageShell({
             <div>
               <span className="section-eyebrow">Local landing page</span>
               <h1 className="mt-6 max-w-4xl text-5xl font-semibold tracking-tight text-text sm:text-6xl">
-                {localHeadline} for service businesses that need tighter lead
-                handling
+                {localHeadline} for service businesses that want fewer missed
+                calls and more booked jobs
               </h1>
               <p className="mt-6 max-w-3xl text-lg leading-8 text-muted">
                 {city.intro} Anchor Systems gives {city.name}{" "}
                 {industry.name.toLowerCase()} businesses a premium system for
                 lead capture, automated follow-up, pipeline visibility, and
                 booked-job efficiency. If calls go unanswered or estimates sit
-                too long, local buyers rarely wait around.
+                too long, local buyers rarely wait around. That lost work turns
+                into lost money fast.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <ButtonLink href={siteConfig.bookingLink} external>
@@ -98,7 +99,7 @@ export function LocationPageShell({
               on estimates, and keep the office and field aligned. Anchor
               Systems helps create that operating discipline without forcing
               teams into a bloated, hard-to-maintain software stack. The cost of
-              not fixing it is simple: lost jobs and lost money.
+              not fixing it is simple: lost jobs and lost money every week.
             </p>
           </div>
 
@@ -244,12 +245,13 @@ export function LocationPageShell({
             <div className="surface-outline p-8">
               <span className="section-eyebrow">Popular problems in {city.name}</span>
               <h2 className="mt-5 text-3xl font-semibold tracking-tight text-text">
-                Related pages for the biggest conversion leaks
+                Related pages for the leaks that cost the most
               </h2>
               <p className="mt-4 max-w-2xl text-lg leading-8 text-muted">
                 These pages focus on the specific response and follow-up problems
                 that most often cost {city.name} {industry.name.toLowerCase()}{" "}
-                businesses booked work.
+                businesses booked work. If one of these is weak, the obvious
+                next step is to book the demo and fix it.
               </p>
               <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
                 {industryProblems.map((problem) => (

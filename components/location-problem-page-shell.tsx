@@ -43,13 +43,13 @@ export function LocationProblemPageShell({
             <div>
               <span className="section-eyebrow">Local problem page</span>
               <h1 className="mt-6 max-w-4xl text-5xl font-semibold tracking-tight text-text sm:text-6xl">
-                {pageLabel} for service businesses that cannot afford slow
-                response
+                {pageLabel} for service businesses that are tired of losing
+                money to slow response
               </h1>
               <p className="mt-6 max-w-3xl text-lg leading-8 text-muted">
                 {city.intro} {problem.intro} In {city.name}, that usually means
                 the revenue lands with whoever responds first and follows up
-                harder.
+                harder. Jobs are lost here every day for exactly this reason.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <ButtonLink href={siteConfig.bookingLink} external>
@@ -91,7 +91,8 @@ export function LocationProblemPageShell({
           <div className="surface-card-light p-8">
             <span className="section-eyebrow">Local pain points</span>
             <h2 className="mt-5 text-3xl font-semibold tracking-tight text-ink">
-              Why {city.name} {industry.name.toLowerCase()} teams lose jobs here
+              Why {city.name} {industry.name.toLowerCase()} teams lose money
+              here
             </h2>
             <p className="mt-4 text-lg leading-8 text-ink-soft">
               In a local market like {city.name}, the penalty for weak response
@@ -114,7 +115,7 @@ export function LocationProblemPageShell({
           <div>
             <span className="section-eyebrow">How Anchor Systems helps</span>
             <h2 className="mt-5 text-3xl font-semibold tracking-tight text-text">
-              A faster way to stop the leak
+              Fix the leak before the next job disappears
             </h2>
             <div className="mt-6 space-y-4">
               {problem.solutionPoints.map((point) => (
@@ -127,7 +128,7 @@ export function LocationProblemPageShell({
           <div>
             <span className="section-eyebrow">Operational leverage</span>
             <h2 className="mt-5 text-3xl font-semibold tracking-tight text-text">
-              What stronger systems change
+              What changes when response gets tighter
             </h2>
             <div className="mt-6 space-y-4">
               {problem.outcomes.map((outcome) => (
@@ -148,12 +149,13 @@ export function LocationProblemPageShell({
           <div className="surface-card-light p-8">
             <span className="section-eyebrow">Related internal links</span>
             <h2 className="mt-5 text-3xl font-semibold tracking-tight text-ink">
-              Keep exploring nearby and related pages
+              Keep moving through the pages tied to this local revenue leak
             </h2>
             <p className="mt-4 max-w-2xl text-lg leading-8 text-ink-soft">
               These links connect the local intent, trade intent, and problem
               intent pages so visitors and search engines can move naturally
-              through the topic cluster.
+              through the topic cluster. They also make the next step obvious if
+              you are actively trying to fix this problem.
             </p>
             <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
               <Link
@@ -185,7 +187,7 @@ export function LocationProblemPageShell({
       <FaqSection
         eyebrow="Local FAQs"
         title={`Questions about ${problem.shortLabel} in ${city.name}`}
-        description="These are the local questions operators ask when they know leads are slipping and need a stronger system fast."
+        description="These are the local questions operators ask when they know leads are slipping, jobs are being lost, and they need a stronger system fast."
         items={[
           {
             question: `Why does ${problem.shortLabel.toLowerCase()} matter in ${city.name}?`,
@@ -207,8 +209,8 @@ export function LocationProblemPageShell({
 
       <CtaBanner
         eyebrow="Book the walkthrough"
-        title={`If ${problem.shortLabel.toLowerCase()} is weak in ${city.name}, revenue is leaking now.`}
-        description="Book the demo and we will walk through how your current process handles inbound demand, where the jobs are slipping, and how Anchor Systems closes the gap."
+        title={`If ${problem.shortLabel.toLowerCase()} is weak in ${city.name}, you are losing jobs right now.`}
+        description="Book the demo and we will walk through how your current process handles inbound demand, where the jobs are slipping, and how Anchor Systems closes the gap fast."
         primaryHref={siteConfig.bookingLink}
         primaryLabel="Book Demo"
         secondaryHref="/demo"
@@ -216,8 +218,8 @@ export function LocationProblemPageShell({
       />
 
       <ContactCta
-        title={`Ready to fix ${problem.shortLabel.toLowerCase()} in ${city.name}?`}
-        description={`Anchor Systems helps ${city.name} service businesses stop missed opportunities, tighten follow-up, and turn more local demand into booked revenue.`}
+        title={`Fix ${problem.shortLabel.toLowerCase()} in ${city.name} before more local jobs go elsewhere.`}
+        description={`Anchor Systems helps ${city.name} service businesses stop missed opportunities, tighten follow-up, and turn more local demand into booked revenue while competitors are still relying on loose processes.`}
       />
     </>
   );
