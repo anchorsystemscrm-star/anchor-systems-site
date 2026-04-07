@@ -21,14 +21,14 @@ export default function AiReceptionistPage() {
           <div>
             <span className="section-eyebrow">AI Receptionist</span>
             <h1 className="mt-6 text-5xl font-semibold tracking-tight text-text sm:text-6xl">
-              Stop letting missed calls turn into lost revenue.
+              Every missed call is a lost shot at a booked job.
             </h1>
             <p className="mt-6 max-w-3xl text-lg leading-8 text-muted">
               Service businesses lose jobs every day because nobody answers,
               nobody follows up fast enough, or after-hours demand lands in
               voicemail. Anchor Systems helps keep those conversations alive
               with AI receptionist workflows, missed-call text back, and a
-              cleaner path to booking.
+              cleaner path to booking before the customer hires someone else.
             </p>
           </div>
           <div className="surface-outline p-8">
@@ -118,7 +118,7 @@ export default function AiReceptionistPage() {
       <CtaBanner
         eyebrow="Book the walkthrough"
         title="See how much demand you may be losing between the ring and the response"
-        description="We will show how Anchor Systems helps your business stay responsive, even when the team is busy, the office is closed, or calls hit all at once."
+        description="We will show how Anchor Systems helps your business stay responsive, even when the team is busy, the office is closed, or calls hit all at once and money is on the line."
         primaryHref={siteConfig.bookingLink}
         primaryLabel="Book Demo"
         secondaryHref="/service-business-crm"
@@ -126,8 +126,8 @@ export default function AiReceptionistPage() {
       />
 
       <ContactCta
-        title="Need a better front door for your business?"
-        description="Anchor Systems gives service businesses a stronger way to capture inbound demand, support booking, and stop missed-call leakage from the first customer touchpoint."
+        title="If calls are being missed, fix that first."
+        description="Anchor Systems gives service businesses a stronger way to capture inbound demand, support booking, and stop missed-call leakage before more jobs disappear."
       />
     </>
   );

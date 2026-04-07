@@ -17,8 +17,8 @@ export default function ContactPage() {
         <div className="container-shell">
           <SectionHeading
             eyebrow="Contact"
-            title="Talk with Anchor Systems"
-            description="If you want a cleaner system for missed calls, follow-up automation, booking flow, and pipeline visibility, the best next step is to book a demo."
+            title="If jobs are slipping through the cracks, book the demo."
+            description="If you want a cleaner system for missed calls, follow-up automation, booking flow, and pipeline visibility, the best next step is to book a demo now."
             theme="dark"
           />
         </div>
@@ -69,8 +69,8 @@ export default function ContactPage() {
       </section>
 
       <ContactCta
-        title="If the business is growing but the system is still loose, let’s fix that."
-        description="Anchor Systems helps service businesses tighten operations around lead capture, follow-up, and booked revenue without creating unnecessary software overhead."
+        title="If the business is growing but the system is still loose, fix it now."
+        description="Anchor Systems helps service businesses tighten operations around lead capture, follow-up, and booked revenue before more jobs leak out of the process."
       />
     </>
   );

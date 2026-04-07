@@ -18,18 +18,18 @@ export default function DemoPage() {
           <div>
             <span className="section-eyebrow">Book Demo</span>
             <h1 className="mt-6 text-5xl font-semibold tracking-tight text-text sm:text-6xl">
-              See how Anchor Systems helps service businesses run tighter.
+              Book the demo and see where your business is losing jobs.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-muted">
               The demo is the fastest way to see how missed calls, scattered
-              follow-up, and weak pipeline visibility turn into lost revenue,
-              and what a cleaner operating system does differently.
+              follow-up, and weak pipeline visibility turn into lost money, and
+              what a cleaner operating system does differently.
             </p>
             <div className="mt-8 grid gap-4">
               {[
-                "Walk through your current lead handling process",
-                "See how AI receptionist and follow-up automation fit together",
-                "Review pricing, onboarding, and the fastest path to launch"
+                "See exactly where missed calls and slow callbacks cost you jobs",
+                "See how AI receptionist and follow-up automation close those gaps",
+                "Review pricing, onboarding, and the fastest path to fixing the problem"
               ].map((item) => (
                 <div
                   key={item}
@@ -49,7 +49,7 @@ export default function DemoPage() {
           <SectionHeading
             eyebrow="What to expect"
             title="A practical walkthrough, not a bloated sales pitch"
-            description="We will focus on the workflows that matter most: inbound calls, missed opportunities, estimate follow-up, scheduling friction, and pipeline visibility."
+            description="We will focus on the workflows that matter most: inbound calls, lost opportunities, estimate follow-up, scheduling friction, and pipeline visibility."
             theme="light"
           />
           <div className="mt-10 grid gap-5 lg:grid-cols-3">
@@ -57,17 +57,17 @@ export default function DemoPage() {
               {
                 title: "Lead handling review",
                 description:
-                  "We start by identifying how leads enter the business and where they currently stall or disappear."
+                  "We start by identifying how leads enter the business and exactly where they stall, cool off, or disappear."
               },
               {
                 title: "System fit",
                 description:
-                  "Then we show how Anchor Systems supports responsiveness, customer communication, and booked-job visibility."
+                  "Then we show how Anchor Systems tightens responsiveness, customer communication, and booked-job visibility."
               },
               {
                 title: "Clear next steps",
                 description:
-                  "If the fit is right, you will leave with a simple understanding of pricing, setup, and rollout."
+                  "If the fit is right, you will leave with a clear plan to stop the leaks and get the system live."
               }
             ].map((item) => (
               <article key={item.title} className="surface-card-light p-6">
@@ -82,8 +82,8 @@ export default function DemoPage() {
       </section>
 
       <ContactCta
-        title="Need to see how the platform would fit your actual workflow?"
-        description="Book the walkthrough and we will keep the conversation focused on lead response, follow-up, and the path to more booked jobs."
+        title="If you know leads are slipping, this is the next step."
+        description="Book the walkthrough and we will keep the conversation focused on missed calls, weak follow-up, and the fastest path to more booked jobs."
       />
     </>
   );

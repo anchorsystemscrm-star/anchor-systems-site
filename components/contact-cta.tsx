@@ -23,16 +23,15 @@ export function ContactCta({ title, description }: ContactCtaProps) {
           </div>
           <div className="surface-card-light p-6">
             <p className="text-sm uppercase tracking-[0.18em] text-ink-soft">
-              Best next move
+              Do this next
             </p>
             <p className="mt-4 text-xl font-semibold text-ink">
-              Show us how leads are handled today and where follow-up breaks
-              down.
+              Book the demo before more calls, quotes, and follow-ups slip away.
             </p>
             <p className="mt-3 text-sm leading-7 text-ink-soft">
-              We will walk through the workflow, where revenue leaks out, and
-              how Anchor Systems can help your team respond faster and book more
-              jobs.
+              We will show exactly where missed calls, weak follow-up, and poor
+              pipeline visibility are costing you jobs, then map out how Anchor
+              Systems closes those gaps fast.
             </p>
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
               <ButtonLink href={siteConfig.bookingLink} external>

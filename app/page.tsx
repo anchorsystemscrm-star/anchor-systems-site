@@ -45,17 +45,17 @@ export default function HomePage() {
 
       <HeroSection
         eyebrow="Anchor Systems"
-        title="Capture more leads, automate follow-up, and book more jobs."
-        description="Anchor Systems is a premium operating system for service businesses that need tighter lead handling, faster response times, and cleaner pipeline visibility. It helps you stop losing revenue between the phone call, the estimate, and the booked job."
+        title="Stop missed calls, tighten follow-up, and turn more leads into booked revenue."
+        description="Anchor Systems is built for service businesses that are tired of losing money between the first call, the estimate, and the booked job. If leads are going unanswered or follow-up is slipping, revenue is leaking right now."
         primaryHref={siteConfig.bookingLink}
         primaryLabel="Book Demo"
         secondaryHref="/pricing"
         secondaryLabel="View pricing"
         highlights={[
+          "Every missed call is a chance for a competitor to win the job",
+          "Every stale estimate is revenue sitting in a weak follow-up process",
           "Built for service businesses, not generic sales teams",
-          "Premium experience without bloated software complexity",
-          "Designed to turn responsiveness into booked revenue",
-          "Scalable SEO architecture for city and trade landing pages"
+          "Designed to turn faster response into booked revenue"
         ]}
         stats={[
           { value: "$297/mo", label: "Simple monthly pricing" },
@@ -67,8 +67,8 @@ export default function HomePage() {
 
       <TrustSection
         eyebrow="Why it works"
-        title="Built around the pressure points where service businesses actually leak revenue"
-        description="Most operators do not need another dashboard. They need fewer gaps. Anchor Systems focuses on the points where jobs are usually lost: missed calls, weak estimate follow-up, low pipeline visibility, and slow office response."
+        title="Built around the moments where service businesses lose jobs and money"
+        description="Most operators do not need another dashboard. They need fewer revenue leaks. Anchor Systems focuses on the exact points where jobs are usually lost: missed calls, weak estimate follow-up, poor pipeline visibility, and slow office response."
         items={[
           {
             title: "Respond faster",
@@ -168,7 +168,7 @@ export default function HomePage() {
       <CtaBanner
         eyebrow="Primary call to action"
         title="If your team is missing leads or letting estimates go cold, fix the system."
-        description="Anchor Systems helps service businesses respond faster, automate follow-up, and make it easier to turn inbound demand into booked jobs."
+        description="Anchor Systems helps service businesses respond faster, automate follow-up, and stop missed calls and stale quotes from quietly draining booked revenue."
         primaryHref={siteConfig.bookingLink}
         primaryLabel="Book Demo"
         secondaryHref="/demo"

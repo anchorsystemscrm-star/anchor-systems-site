@@ -44,7 +44,8 @@ export function LocationPageShell({
                 {city.intro} Anchor Systems gives {city.name}{" "}
                 {industry.name.toLowerCase()} businesses a premium system for
                 lead capture, automated follow-up, pipeline visibility, and
-                booked-job efficiency.
+                booked-job efficiency. If calls go unanswered or estimates sit
+                too long, local buyers rarely wait around.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <ButtonLink href={siteConfig.bookingLink} external>
@@ -94,7 +95,8 @@ export function LocationPageShell({
               They need a better way to answer fast, stop lead leaks, follow up
               on estimates, and keep the office and field aligned. Anchor
               Systems helps create that operating discipline without forcing
-              teams into a bloated, hard-to-maintain software stack.
+              teams into a bloated, hard-to-maintain software stack. The cost of
+              not fixing it is simple: lost jobs and lost money.
             </p>
           </div>
 
@@ -209,7 +211,7 @@ export function LocationPageShell({
 
       <ContactCta
         title={`Want a better ${industry.name.toLowerCase()} operating system in ${city.name}?`}
-        description={`Anchor Systems helps ${city.name} service businesses stop lead leaks, automate estimate follow-up, and book more jobs without adding complexity to the office.`}
+        description={`Anchor Systems helps ${city.name} service businesses stop lead leaks, automate estimate follow-up, and book more jobs before more local revenue slips to faster competitors.`}
       />
     </>
   );

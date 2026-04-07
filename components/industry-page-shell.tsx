@@ -34,7 +34,9 @@ export function IndustryPageShell({ industry }: IndustryPageShellProps) {
                 {industry.heroTitle}
               </h1>
               <p className="mt-6 max-w-3xl text-lg leading-8 text-muted">
-                {industry.heroDescription}
+                {industry.heroDescription} If your team misses the first call or
+                lets estimates sit, that job usually becomes someone else&apos;s
+                revenue.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <ButtonLink href={siteConfig.bookingLink} external>
@@ -76,7 +78,11 @@ export function IndustryPageShell({ industry }: IndustryPageShellProps) {
             <h2 className="mt-5 text-3xl font-semibold tracking-tight text-ink">
               What {industry.name.toLowerCase()} businesses are up against
             </h2>
-            <p className="mt-4 text-lg leading-8 text-ink-soft">{industry.intro}</p>
+            <p className="mt-4 text-lg leading-8 text-ink-soft">
+              {industry.intro} In this category, slow response and weak
+              follow-up do not just create admin problems. They cost booked
+              jobs.
+            </p>
           </div>
 
           <div className="grid gap-5">
@@ -177,7 +183,7 @@ export function IndustryPageShell({ industry }: IndustryPageShellProps) {
       <CtaBanner
         eyebrow="Book the walkthrough"
         title={`See how Anchor Systems supports ${industry.name.toLowerCase()} growth without adding complexity`}
-        description="We will walk through how your team handles calls, estimates, follow-up, and booked jobs today, then show where automation and better pipeline control can create immediate leverage."
+        description="We will walk through how your team handles calls, estimates, follow-up, and booked jobs today, then show exactly where missed calls and stale estimates are costing you revenue."
         primaryHref={siteConfig.bookingLink}
         primaryLabel="Book Demo"
         secondaryHref="/service-business-crm"
@@ -186,7 +192,7 @@ export function IndustryPageShell({ industry }: IndustryPageShellProps) {
 
       <ContactCta
         title={`Want a cleaner system for your ${industry.name.toLowerCase()} business?`}
-        description="Anchor Systems is designed to make your business more responsive, more organized, and more effective at stopping missed calls, tightening follow-up, and turning demand into booked work."
+        description="Anchor Systems is designed to make your business more responsive, more organized, and far harder to lose jobs through missed calls, lead leaks, and slow follow-up."
       />
     </>
   );

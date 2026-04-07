@@ -22,8 +22,8 @@ export default function PricingPage() {
         <div className="container-shell">
           <SectionHeading
             eyebrow="Pricing"
-            title="Simple pricing for service businesses that want a tighter system"
-            description="Anchor Systems keeps pricing direct so owners can focus on the value: stronger lead capture, faster follow-up, better pipeline visibility, and more booked jobs."
+            title="Simple pricing for service businesses that want to stop losing easy revenue"
+            description="Anchor Systems keeps pricing direct so owners can focus on the real return: fewer missed calls, stronger follow-up, clearer pipeline visibility, and more booked jobs."
             theme="dark"
           />
         </div>
@@ -41,7 +41,7 @@ export default function PricingPage() {
             {
               title: "Designed to pay for itself in missed opportunities recovered",
               description:
-                "The value is in better lead handling and better follow-up, not just in adding another tool to the stack."
+                "The value is in recovering jobs you are already generating but not converting because the system is too loose."
             },
             {
               title: "Simple enough for owner-led and lean office teams",
@@ -51,7 +51,7 @@ export default function PricingPage() {
             {
               title: "Focused on workflows that support booked revenue",
               description:
-                "Every included feature is there to reduce operational drag and improve responsiveness across the customer journey."
+                "Every included feature is there to reduce lead leaks, tighten follow-up, and improve responsiveness across the customer journey."
             }
           ].map((item) => (
             <article key={item.title} className="surface-card-light p-6">
@@ -75,7 +75,7 @@ export default function PricingPage() {
       <CtaBanner
         eyebrow="Next step"
         title="See whether Anchor Systems fits your workflow before you decide"
-        description="We will walk through how your business handles leads, estimates, and follow-up today, then show what the platform changes."
+        description="We will walk through how your business handles leads, estimates, and follow-up today, then show where the current process is costing you jobs."
         primaryHref={siteConfig.bookingLink}
         primaryLabel="Book Demo"
         secondaryHref="/demo"
@@ -84,7 +84,7 @@ export default function PricingPage() {
 
       <ContactCta
         title="Want to talk through pricing with your actual lead flow in mind?"
-        description="Book a demo and we will show how Anchor Systems supports your workflow, where it removes friction, and why the return comes from tighter lead handling and follow-up execution."
+        description="Book a demo and we will show how Anchor Systems supports your workflow, where it removes friction, and why fixing lead leaks usually pays for itself fast."
       />
     </>
   );

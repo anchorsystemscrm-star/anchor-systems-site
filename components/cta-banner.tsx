@@ -27,6 +27,9 @@ export function CtaBanner({
           <span className="section-eyebrow">
             {eyebrow}
           </span>
+          <p className="mt-5 max-w-2xl text-sm font-semibold uppercase tracking-[0.18em] text-blue-3">
+            Every missed call, stale estimate, and slow callback costs real revenue.
+          </p>
           <div className="mt-6 grid gap-8 lg:grid-cols-[1fr,auto] lg:items-end">
             <div className="max-w-3xl">
               <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">

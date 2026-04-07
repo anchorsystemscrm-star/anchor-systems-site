@@ -23,13 +23,13 @@ export default function ServiceBusinessCrmPage() {
           <div>
             <span className="section-eyebrow">Service Business CRM</span>
             <h1 className="mt-6 text-5xl font-semibold tracking-tight text-text sm:text-6xl">
-              A CRM built around how service businesses actually operate.
+              See every lead, fix follow-up leaks, and book more work.
             </h1>
             <p className="mt-6 max-w-3xl text-lg leading-8 text-muted">
               Anchor Systems centralizes leads, automates follow-up, and gives
               owners and office teams better visibility into what is happening
               between the first call, the estimate, and the booked job. It is a
-              platform for running tighter, not a generic sales database.
+              platform for protecting revenue, not a generic sales database.
             </p>
           </div>
           <div className="surface-outline p-8">
@@ -98,7 +98,7 @@ export default function ServiceBusinessCrmPage() {
       <CtaBanner
         eyebrow="See the platform"
         title="If the business feels scattered between leads, estimates, and follow-up, this is the fix."
-        description="Book a walkthrough and see how Anchor Systems helps your team operate with more control, more consistency, and more booked-job leverage."
+        description="Book a walkthrough and see how Anchor Systems helps your team operate with more control, more consistency, and fewer lost jobs hiding in the pipeline."
         primaryHref={siteConfig.bookingLink}
         primaryLabel="Book Demo"
         secondaryHref="/pricing"
@@ -106,7 +106,7 @@ export default function ServiceBusinessCrmPage() {
       />
 
       <ContactCta
-        title="Want a CRM that behaves like an operating system, not a generic database?"
+        title="If your pipeline is messy, revenue is leaking."
         description="Anchor Systems is designed for service companies that want less friction between inbound demand, estimate follow-up, and collected revenue."
       />
     </>
