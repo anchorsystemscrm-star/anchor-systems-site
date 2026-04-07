@@ -37,7 +37,7 @@ export function LocationPageShell({
 
           <div className="grid gap-10 lg:grid-cols-[1.05fr,0.95fr] lg:items-center">
             <div>
-              <span className="section-eyebrow">Local landing page</span>
+              <span className="section-eyebrow">Local market page</span>
               <h1 className="mt-6 max-w-4xl text-5xl font-semibold tracking-tight text-text sm:text-6xl">
                 {localHeadline} for service businesses that want fewer missed
                 calls and more booked jobs
@@ -163,13 +163,13 @@ export function LocationPageShell({
       <section className="section-space light-section">
         <div className="container-shell">
           <div className="surface-card-light p-8">
-            <span className="section-eyebrow">Related local pages</span>
+            <span className="section-eyebrow">Nearby markets</span>
             <h2 className="mt-5 text-3xl font-semibold tracking-tight text-ink">
-              Explore nearby {industry.name.toLowerCase()} pages
+              Explore nearby {industry.name.toLowerCase()} markets
             </h2>
             <p className="mt-4 max-w-2xl text-lg leading-8 text-ink-soft">
-              Internal links between nearby city pages make the location system
-              easier to expand and easier for search engines to crawl.
+              Nearby markets usually share the same response-time pressure,
+              customer expectations, and follow-up challenges.
             </p>
             <div className="mt-8 grid gap-4 md:grid-cols-3">
               {relatedCities.map((relatedCity) => (
@@ -247,10 +247,10 @@ export function LocationPageShell({
             <div className="surface-outline p-8">
               <span className="section-eyebrow">Popular problems in {city.name}</span>
               <h2 className="mt-5 text-3xl font-semibold tracking-tight text-text">
-                Related pages for the leaks that cost the most
+                Where {city.name} businesses lose the most jobs
               </h2>
               <p className="mt-4 max-w-2xl text-lg leading-8 text-muted">
-                These pages focus on the specific response and follow-up problems
+                These sections focus on the specific response and follow-up problems
                 that most often cost {city.name} {industry.name.toLowerCase()}{" "}
                 businesses booked work. If one of these is weak, the obvious
                 next step is to book the demo and fix it now.

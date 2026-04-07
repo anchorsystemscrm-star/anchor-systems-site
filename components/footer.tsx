@@ -23,11 +23,11 @@ export function Footer() {
               </p>
               <div className="mt-6 rounded-[28px] border border-white/10 bg-white/[0.04] p-5">
                 <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-3">
-                  Launch ready
+                  Built for operators
                 </p>
                 <p className="mt-3 text-sm leading-7 text-muted">
-                  Strong SEO architecture, scalable landing page generation, and
-                  a premium brand system designed to grow cleanly.
+                  Built to capture more leads, stop missed opportunities, and
+                  help service businesses book more of the work already coming in.
                 </p>
               </div>
               <Link

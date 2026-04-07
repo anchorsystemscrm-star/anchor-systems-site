@@ -385,7 +385,7 @@ export const problemSolutions: ProblemSolution[] = [
       "The business can appear unresponsive even when the team is busy, not careless."
     ],
     solutionPoints: [
-      "Capture inbound demand faster and route it into one visible system.",
+      "Capture inbound demand faster and bring it into one visible system.",
       "Reduce lead loss caused by slow callbacks and fragmented intake.",
       "Support stronger responsiveness without adding more office complexity."
     ],

@@ -8,7 +8,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata = buildMetadata({
   title: "Locations",
   description:
-    "Explore Anchor Systems location pages for service businesses across Virginia markets where fast response and tighter follow-up decide who gets paid.",
+    "Explore Anchor Systems across Virginia markets where fast response and tighter follow-up decide who gets paid.",
   path: "/locations"
 });
 
@@ -19,8 +19,8 @@ export default function LocationsPage() {
         <div className="container-shell">
           <SectionHeading
             eyebrow="Locations"
-            title="Local pages built around the markets where slow response costs the most"
-            description="These landing pages are generated from shared city and industry data so Anchor Systems can expand local coverage without rebuilding templates while keeping every page focused on lost jobs, lost money, and the fix."
+            title="Markets where slow response costs the most"
+            description="Anchor Systems helps service businesses show up clearly in the markets they want to grow, respond faster, and turn more local demand into booked jobs."
             theme="dark"
           />
         </div>
@@ -44,7 +44,7 @@ export default function LocationsPage() {
                     {city.intro}
                   </p>
                   <p className="mt-4 text-sm font-medium text-blue-2">
-                    View {industry.name} page
+                    View {industry.name} service fit
                   </p>
                 </Link>
               );

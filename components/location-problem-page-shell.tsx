@@ -162,14 +162,14 @@ export function LocationProblemPageShell({
       <section className="section-space light-section">
         <div className="container-shell">
           <div className="surface-card-light p-8">
-            <span className="section-eyebrow">Related internal links</span>
+            <span className="section-eyebrow">Where else this shows up</span>
             <h2 className="mt-5 text-3xl font-semibold tracking-tight text-ink">
               If you are dealing with this in {city.name}, you are likely also losing jobs here:
             </h2>
             <p className="mt-4 max-w-2xl text-lg leading-8 text-ink-soft">
-              These links connect the local intent, trade intent, and problem
-              intent pages so visitors and search engines can move naturally
-              through the topic cluster while making the next move obvious.
+              These links keep the most relevant local and trade-specific sections
+              close together so it is easier to see where missed calls, weak
+              follow-up, and lost jobs are showing up around the business.
             </p>
             <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
               <Link

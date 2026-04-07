@@ -152,15 +152,15 @@ export function ProblemPageShell({
       <section className="section-space light-section">
         <div className="container-shell">
           <div className="surface-card-light p-8">
-            <span className="section-eyebrow">Related pages</span>
+            <span className="section-eyebrow">Where else this shows up</span>
             <div className="mt-6 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
               <div className="max-w-2xl">
                 <h2 className="text-3xl font-semibold tracking-tight text-ink">
-                  Keep moving through the pages tied to this revenue problem
+                  Keep moving through the most relevant parts of this revenue problem
                 </h2>
                 <p className="mt-4 text-lg leading-8 text-ink-soft">
                   If you are dealing with this, you are likely also losing jobs
-                  here. Use these pages to see how the same revenue leak shows
+                  here. Use these sections to see how the same revenue leak shows
                   up across your market, your trade, and the buying journey.
                 </p>
               </div>
@@ -200,12 +200,12 @@ export function ProblemPageShell({
       <section className="section-space dark-section">
         <div className="container-shell">
           <div className="surface-outline p-8">
-            <span className="section-eyebrow">Industry links</span>
+            <span className="section-eyebrow">Other service businesses</span>
             <h2 className="mt-5 text-3xl font-semibold tracking-tight text-text">
               If you are dealing with this, you are likely also losing jobs here:
             </h2>
             <p className="mt-4 max-w-2xl text-lg leading-8 text-muted">
-              These industry pages show how the same missed-call, follow-up, and
+              These industry sections show how the same missed-call, follow-up, and
               pipeline problems show up in other service businesses and where
               the money leaks out fastest.
             </p>

@@ -143,17 +143,16 @@ export function IndustryPageShell({ industry }: IndustryPageShellProps) {
       <section className="section-space light-section">
         <div className="container-shell">
           <div className="surface-card-light p-8">
-            <span className="section-eyebrow">Location pages</span>
+            <span className="section-eyebrow">Local markets</span>
             <div className="mt-6 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
               <div className="max-w-2xl">
                 <h2 className="text-3xl font-semibold tracking-tight text-ink">
-                  Explore {industry.name.toLowerCase()} SEO pages by city
+                  See how this problem shows up across the markets you want to win
                 </h2>
                 <p className="mt-4 text-lg leading-8 text-ink-soft">
-                  The site is structured to scale location-targeted pages cleanly.
-                  Start with these seeded city pages and expand by adding data,
-                  not rebuilding templates. In every market, fast response and
-                  tighter follow-up are what stop jobs from leaking away.
+                  Anchor Systems helps service businesses show up stronger in
+                  the places they want to win. In every market, fast response
+                  and tighter follow-up are what stop jobs from leaking away.
                 </p>
               </div>
               <ButtonLink href="/contact" variant="secondary">
@@ -179,7 +178,7 @@ export function IndustryPageShell({ industry }: IndustryPageShellProps) {
         <section className="section-space dark-section">
           <div className="container-shell">
             <div className="surface-outline p-8">
-              <span className="section-eyebrow">Related problems</span>
+              <span className="section-eyebrow">Where else money leaks</span>
               <div className="mt-6 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
                 <div className="max-w-2xl">
                   <h2 className="text-3xl font-semibold tracking-tight text-text">
@@ -187,8 +186,8 @@ export function IndustryPageShell({ industry }: IndustryPageShellProps) {
                     jobs here:
                   </h2>
                   <p className="mt-4 text-lg leading-8 text-muted">
-                    These pages go deeper on the specific missed-call, follow-up,
-                    and pipeline problems that most often cost{" "}
+                    These breakdowns zero in on the missed-call, follow-up, and
+                    pipeline leaks that most often cost{" "}
                     {industry.name.toLowerCase()} companies booked jobs.
                   </p>
                 </div>

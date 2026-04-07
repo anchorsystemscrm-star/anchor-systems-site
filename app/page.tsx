@@ -102,9 +102,9 @@ export default function HomePage() {
       <section className="section-space light-section">
         <div className="container-shell">
           <SectionHeading
-            eyebrow="High-intent pages"
+            eyebrow="Common revenue leaks"
             title="Start with the leaks that usually cost the most jobs"
-            description="These pages go straight at the problems most service businesses feel first: missed calls, slow follow-up, after-hours gaps, and weak visibility into which leads still need action."
+            description="Start with the problems most service businesses feel first: missed calls, slow follow-up, after-hours gaps, and weak visibility into which leads still need action."
             theme="light"
           />
           <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
@@ -126,7 +126,7 @@ export default function HomePage() {
           <SectionHeading
             eyebrow="Industries"
             title="Built for service businesses where speed decides who gets paid"
-            description="These industry pages focus on where revenue actually leaks by trade, from emergency calls that go unanswered to estimates that sit too long to convert."
+            description="Each industry section focuses on where revenue actually leaks by trade, from emergency calls that go unanswered to estimates that sit too long to convert."
             theme="light"
           />
           <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-5">
@@ -153,9 +153,9 @@ export default function HomePage() {
         <div className="container-shell">
           <div className="surface-outline p-8">
             <SectionHeading
-              eyebrow="Location SEO system"
-              title="A structure built to capture local intent at scale"
-              description="Anchor Systems is set up with data-driven location and industry routes so you can expand into more markets without rebuilding the site while keeping every page focused on lost jobs, lost money, and the fix."
+              eyebrow="Local growth"
+              title="Built to win more local jobs"
+              description="Anchor Systems helps service businesses stay visible, responsive, and organized in the markets they want to win so more nearby demand turns into booked work."
               theme="dark"
             />
             <div className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-5">
