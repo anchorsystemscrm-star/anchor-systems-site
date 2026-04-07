@@ -62,6 +62,17 @@ export function getFeaturedIndustries(limit = 6) {
   return industries.slice(0, limit);
 }
 
+export function getRelatedIndustries(currentSlug: string, limit = 3) {
+  const current = getIndustryBySlug(currentSlug);
+  const others = industries.filter((industry) => industry.slug !== currentSlug);
+
+  if (!current) {
+    return others.slice(0, limit);
+  }
+
+  return [current, ...others].slice(0, limit);
+}
+
 export function getFeaturedCities(limit = 6) {
   return cities.slice(0, limit);
 }

@@ -21,7 +21,7 @@ export function LocationPageShell({
   relatedCities
 }: LocationPageShellProps) {
   const localHeadline = `${industry.name} CRM in ${city.name}, ${city.state}`;
-  const industryProblems = getProblemsForIndustry(industry.slug, 2);
+  const industryProblems = getProblemsForIndustry(industry.slug, 3);
 
   return (
     <>
@@ -190,11 +190,59 @@ export function LocationPageShell({
         </div>
       </section>
 
+      <section className="section-space light-section">
+        <div className="container-shell">
+          <div className="surface-card-light p-8">
+            <span className="section-eyebrow">Popular services in {city.name}</span>
+            <h2 className="mt-5 text-3xl font-semibold tracking-tight text-ink">
+              High-intent service workflows local buyers care about
+            </h2>
+            <p className="mt-4 max-w-3xl text-lg leading-8 text-ink-soft">
+              These are the moments where {city.name}{" "}
+              {industry.name.toLowerCase()} businesses usually win or lose the
+              job: the first response, the follow-up after the estimate, and how
+              clearly the next step gets handled.
+            </p>
+            <div className="mt-8 grid gap-4 md:grid-cols-3">
+              {industry.useCases.slice(0, 3).map((useCase, index) => {
+                const linkedProblem = industryProblems[index];
+
+                return (
+                  <div key={useCase} className="surface-card-light px-6 py-6">
+                    <p className="text-sm font-semibold uppercase tracking-[0.18em] text-blue-2">
+                      Popular service {index + 1}
+                    </p>
+                    <p className="mt-3 text-base font-medium leading-7 text-ink">
+                      {useCase}
+                    </p>
+                    {linkedProblem ? (
+                      <Link
+                        href={`/locations/${city.slug}/solutions/${linkedProblem.slug}`}
+                        className="mt-5 inline-flex text-sm font-semibold text-blue-2 hover:text-blue"
+                      >
+                        See the related problem page
+                      </Link>
+                    ) : (
+                      <Link
+                        href={`/${industry.slug}`}
+                        className="mt-5 inline-flex text-sm font-semibold text-blue-2 hover:text-blue"
+                      >
+                        View the main industry page
+                      </Link>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {industryProblems.length ? (
         <section className="section-space dark-section">
           <div className="container-shell">
             <div className="surface-outline p-8">
-              <span className="section-eyebrow">Problem pages</span>
+              <span className="section-eyebrow">Popular problems in {city.name}</span>
               <h2 className="mt-5 text-3xl font-semibold tracking-tight text-text">
                 Related pages for the biggest conversion leaks
               </h2>
@@ -215,6 +263,9 @@ export function LocationPageShell({
                 ))}
                 <Link href="/demo" className="dark-link-card">
                   Book a demo walkthrough
+                </Link>
+                <Link href="/pricing" className="dark-link-card">
+                  Compare pricing and setup
                 </Link>
               </div>
             </div>

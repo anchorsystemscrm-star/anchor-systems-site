@@ -178,7 +178,7 @@ export function IndustryPageShell({ industry }: IndustryPageShellProps) {
         <section className="section-space dark-section">
           <div className="container-shell">
             <div className="surface-outline p-8">
-              <span className="section-eyebrow">Problem pages</span>
+              <span className="section-eyebrow">Related problems</span>
               <div className="mt-6 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
                 <div className="max-w-2xl">
                   <h2 className="text-3xl font-semibold tracking-tight text-text">

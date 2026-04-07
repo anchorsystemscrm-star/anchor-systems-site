@@ -7,7 +7,7 @@ import { CtaBanner } from "@/components/cta-banner";
 import { FaqSection } from "@/components/faq-section";
 import { siteConfig } from "@/data/site";
 import type { Industry, ProblemSolution } from "@/data/types";
-import { getProblemLocationCities } from "@/lib/content";
+import { getProblemLocationCities, getRelatedIndustries } from "@/lib/content";
 
 type ProblemPageShellProps = {
   problem: ProblemSolution;
@@ -19,6 +19,7 @@ export function ProblemPageShell({
   industry
 }: ProblemPageShellProps) {
   const featuredCities = getProblemLocationCities().slice(0, 4);
+  const relatedIndustries = getRelatedIndustries(industry.slug, 3);
 
   return (
     <>
@@ -161,6 +162,44 @@ export function ProblemPageShell({
                   className="light-link-card"
                 >
                   {problem.shortLabel} in {city.name}
+                </Link>
+              ))}
+            </div>
+            <div className="mt-10 grid gap-4 md:grid-cols-3">
+              <Link href="/pricing" className="light-link-card">
+                Compare pricing and rollout
+              </Link>
+              <Link href="/demo" className="light-link-card">
+                Book a live walkthrough
+              </Link>
+              <Link href={`/${industry.slug}`} className="light-link-card">
+                Return to {industry.name} overview
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-space dark-section">
+        <div className="container-shell">
+          <div className="surface-outline p-8">
+            <span className="section-eyebrow">Industry links</span>
+            <h2 className="mt-5 text-3xl font-semibold tracking-tight text-text">
+              Explore related industry pages
+            </h2>
+            <p className="mt-4 max-w-2xl text-lg leading-8 text-muted">
+              If you are researching this problem, these industry pages are the
+              next best place to compare how Anchor Systems fits different
+              service-business models.
+            </p>
+            <div className="mt-8 grid gap-4 md:grid-cols-3">
+              {relatedIndustries.map((relatedIndustry) => (
+                <Link
+                  key={relatedIndustry.slug}
+                  href={`/${relatedIndustry.slug}`}
+                  className="dark-link-card"
+                >
+                  {relatedIndustry.name} CRM and automation
                 </Link>
               ))}
             </div>
