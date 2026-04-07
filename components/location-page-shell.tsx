@@ -46,9 +46,9 @@ export function LocationPageShell({
                 {city.intro} Anchor Systems gives {city.name}{" "}
                 {industry.name.toLowerCase()} businesses a premium system for
                 lead capture, automated follow-up, pipeline visibility, and
-                booked-job efficiency. If calls go unanswered or estimates sit
-                too long, local buyers rarely wait around. That lost work turns
-                into lost money fast.
+                booked-job efficiency. In {city.name}, local buyers move
+                quickly. If calls go unanswered or estimates sit too long, that
+                lost work turns into lost money fast.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <ButtonLink href={siteConfig.bookingLink} external>
@@ -99,7 +99,8 @@ export function LocationPageShell({
               on estimates, and keep the office and field aligned. Anchor
               Systems helps create that operating discipline without forcing
               teams into a bloated, hard-to-maintain software stack. The cost of
-              not fixing it is simple: lost jobs and lost money every week.
+              not fixing it is simple: lost jobs and lost money every week while
+              faster competitors keep taking the work.
             </p>
           </div>
 
@@ -202,7 +203,8 @@ export function LocationPageShell({
               These are the moments where {city.name}{" "}
               {industry.name.toLowerCase()} businesses usually win or lose the
               job: the first response, the follow-up after the estimate, and how
-              clearly the next step gets handled.
+              clearly the next step gets handled. If any of these are weak, the
+              revenue usually goes to a more responsive local competitor.
             </p>
             <div className="mt-8 grid gap-4 md:grid-cols-3">
               {industry.useCases.slice(0, 3).map((useCase, index) => {
@@ -251,7 +253,7 @@ export function LocationPageShell({
                 These pages focus on the specific response and follow-up problems
                 that most often cost {city.name} {industry.name.toLowerCase()}{" "}
                 businesses booked work. If one of these is weak, the obvious
-                next step is to book the demo and fix it.
+                next step is to book the demo and fix it now.
               </p>
               <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
                 {industryProblems.map((problem) => (
@@ -297,8 +299,8 @@ export function LocationPageShell({
       />
 
       <ContactCta
-        title={`Want a better ${industry.name.toLowerCase()} operating system in ${city.name}?`}
-        description={`Anchor Systems helps ${city.name} service businesses stop lead leaks, automate estimate follow-up, and book more jobs before more local revenue slips to faster competitors.`}
+        title={`Stop losing ${city.name} ${industry.name.toLowerCase()} jobs to faster competitors.`}
+        description={`Anchor Systems captures local demand, closes follow-up gaps, and stops more of your ${city.name} revenue from leaking to competitors that respond first.`}
       />
     </>
   );

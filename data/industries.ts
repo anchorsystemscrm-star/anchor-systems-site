@@ -5,9 +5,9 @@ export const industries: Industry[] = [
     slug: "hvac-crm",
     name: "HVAC",
     serviceLabel: "HVAC CRM",
-    heroTitle: "HVAC CRM and AI follow-up for shops that need faster response times",
+    heroTitle: "HVAC companies lose jobs fast when urgent calls go unanswered",
     heroDescription:
-      "Anchor Systems helps HVAC companies capture missed calls, organize estimate follow-up, and keep office-to-field communication tighter so more service calls and replacements get booked.",
+      "Anchor Systems captures missed HVAC calls, closes estimate follow-up gaps, and stops emergency demand and replacement revenue from leaking to faster competitors.",
     intro:
       "HVAC work moves fast. When the phone rings, homeowners usually need an answer now, not tomorrow. Anchor Systems gives HVAC teams a stronger system for lead capture, dispatch-ready communication, estimate follow-up, and booked-job visibility.",
     painPoints: [
@@ -54,9 +54,9 @@ export const industries: Industry[] = [
     slug: "plumbing-crm",
     name: "Plumbing",
     serviceLabel: "Plumbing CRM",
-    heroTitle: "Plumbing CRM software built for fast lead handling and booked jobs",
+    heroTitle: "Plumbers lose revenue every time an urgent service call hits voicemail",
     heroDescription:
-      "Anchor Systems helps plumbing companies stay responsive, automate estimate follow-up, and manage the customer pipeline without relying on scattered tools.",
+      "Anchor Systems captures urgent plumbing demand, closes follow-up gaps on larger estimates, and stops booked work from leaking out of a scattered process.",
     intro:
       "Plumbing leads can be urgent, price-sensitive, or both. Anchor Systems helps plumbing businesses move faster from the first call to the scheduled job while keeping quote follow-up, communication, and pipeline visibility under control.",
     painPoints: [
@@ -103,9 +103,9 @@ export const industries: Industry[] = [
     slug: "electrical-crm",
     name: "Electrical",
     serviceLabel: "Electrical CRM",
-    heroTitle: "Electrical CRM for contractors who want tighter lead control",
+    heroTitle: "Electrical contractors lose jobs when callbacks lag and estimates stall",
     heroDescription:
-      "Anchor Systems helps electrical contractors organize inbound leads, automate follow-up, and create better visibility from first contact to booked work.",
+      "Anchor Systems captures inbound electrical demand, automates the follow-up that keeps quotes alive, and stops booked work from slipping through weak lead handling.",
     intro:
       "Electrical businesses often manage a mix of service calls, project-based estimates, and repeat customer work. Anchor Systems gives electrical teams a cleaner operating system for lead handling, quote follow-up, and pipeline clarity.",
     painPoints: [
@@ -152,9 +152,9 @@ export const industries: Industry[] = [
     slug: "roofing-crm",
     name: "Roofing",
     serviceLabel: "Roofing CRM",
-    heroTitle: "Roofing CRM for faster follow-up and cleaner sales visibility",
+    heroTitle: "Roofers lose high-ticket jobs when inspections do not turn into follow-up",
     heroDescription:
-      "Anchor Systems helps roofing companies handle inbound opportunities, organize inspections and estimates, and keep follow-up moving until the job is sold.",
+      "Anchor Systems captures roofing opportunities, organizes inspections and estimates, and stops high-ticket jobs from going cold after the first visit.",
     intro:
       "Roofing businesses win when they stay responsive, keep inspections organized, and follow up better than the competition. Anchor Systems helps roofing teams turn more inquiries into booked estimates and more estimates into signed work.",
     painPoints: [
@@ -201,9 +201,9 @@ export const industries: Industry[] = [
     slug: "gutter-company-crm",
     name: "Gutter Companies",
     serviceLabel: "Gutter Company CRM",
-    heroTitle: "Gutter company CRM for lead response, estimates, and booked installs",
+    heroTitle: "Gutter companies lose booked installs when quotes sit too long",
     heroDescription:
-      "Anchor Systems helps gutter installers capture more inquiries, stay on top of estimates, and keep work moving through a simple, high-clarity sales process.",
+      "Anchor Systems captures gutter inquiries, closes estimate follow-up gaps, and stops booked installs from leaking out of a weak sales process.",
     intro:
       "For gutter companies, speed and consistency matter. Homeowners often request quotes from multiple businesses, and the first team with an organized follow-up process usually has the advantage. Anchor Systems helps you respond faster and manage the pipeline with more confidence.",
     painPoints: [
@@ -250,9 +250,9 @@ export const industries: Industry[] = [
     slug: "landscaping-crm",
     name: "Landscaping",
     serviceLabel: "Landscaping CRM",
-    heroTitle: "Landscaping CRM software for organized leads and stronger follow-up",
+    heroTitle: "Landscapers lose jobs when estimates sit and the office falls behind",
     heroDescription:
-      "Anchor Systems helps landscaping businesses manage incoming leads, estimate follow-up, and recurring customer communication with far less operational drag.",
+      "Anchor Systems captures landscaping demand, closes estimate follow-up gaps, and stops project work and recurring revenue from slipping through a loose system.",
     intro:
       "Landscaping businesses juggle maintenance leads, project quotes, scheduling, and seasonal demand. Anchor Systems helps landscaping teams stay responsive and organized without losing track of proposals, customer follow-up, or booked work.",
     painPoints: [
@@ -299,9 +299,9 @@ export const industries: Industry[] = [
     slug: "garage-door-crm",
     name: "Garage Door Companies",
     serviceLabel: "Garage Door CRM",
-    heroTitle: "Garage door CRM for quicker callbacks and more booked service work",
+    heroTitle: "Garage door companies lose same-day jobs when after-hours calls go cold",
     heroDescription:
-      "Anchor Systems helps garage door businesses capture urgent calls, automate estimate follow-up, and keep scheduling and pipeline status under tighter control.",
+      "Anchor Systems captures urgent garage door calls, closes follow-up gaps on replacements, and stops same-day revenue from leaking out overnight.",
     intro:
       "Garage door companies often win on speed. When a door is stuck or a spring breaks, homeowners want a fast answer. Anchor Systems helps garage door teams respond sooner, manage the pipeline better, and keep estimate follow-up from slipping.",
     painPoints: [
@@ -348,9 +348,9 @@ export const industries: Industry[] = [
     slug: "junk-removal-crm",
     name: "Junk Removal",
     serviceLabel: "Junk Removal CRM",
-    heroTitle: "Junk removal CRM for faster response and more booked jobs",
+    heroTitle: "Junk removal companies lose fast-moving jobs when response is slow",
     heroDescription:
-      "Anchor Systems helps junk removal companies respond quickly to inbound inquiries, manage quotes and scheduling, and follow up consistently until the job is booked.",
+      "Anchor Systems captures junk removal demand, keeps quotes and scheduling visible, and stops fast-moving jobs from leaking out of a weak callback process.",
     intro:
       "Junk removal is competitive and often speed-driven. Homeowners and property managers usually contact more than one company. Anchor Systems helps junk removal teams answer faster, keep quote follow-up moving, and manage the booking pipeline with less friction.",
     painPoints: [
@@ -397,9 +397,9 @@ export const industries: Industry[] = [
     slug: "carpet-cleaning-crm",
     name: "Carpet Cleaning",
     serviceLabel: "Carpet Cleaning CRM",
-    heroTitle: "Carpet cleaning CRM for stronger lead response and repeat business",
+    heroTitle: "Carpet cleaning companies lose bookings when follow-up is inconsistent",
     heroDescription:
-      "Anchor Systems helps carpet cleaning businesses manage inbound requests, automate follow-up, and create a smoother customer experience from first call to paid job.",
+      "Anchor Systems captures carpet cleaning leads, automates the follow-up that keeps quotes active, and stops repeat revenue from disappearing in a loose system.",
     intro:
       "Carpet cleaning businesses rely on quick response, clean scheduling, and repeatable customer communication. Anchor Systems helps you tighten lead handling, improve follow-up, and make it easier to drive both new bookings and repeat work.",
     painPoints: [
@@ -446,9 +446,9 @@ export const industries: Industry[] = [
     slug: "pest-control-crm",
     name: "Pest Control",
     serviceLabel: "Pest Control CRM",
-    heroTitle: "Pest control CRM for better responsiveness and retention",
+    heroTitle: "Pest control companies lose urgent jobs when they are slow to respond",
     heroDescription:
-      "Anchor Systems helps pest control companies capture inbound demand, automate estimate and service follow-up, and keep recurring customer relationships more organized.",
+      "Anchor Systems captures urgent pest control demand, automates follow-up on new and recurring service, and stops missed calls from turning into lost customers.",
     intro:
       "Pest control businesses need to win new customers quickly and keep existing ones engaged over time. Anchor Systems supports both sides of that equation with faster lead handling, cleaner pipeline management, and automation that reduces manual work.",
     painPoints: [

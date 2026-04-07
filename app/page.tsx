@@ -20,9 +20,9 @@ import { getFeaturedProblems } from "@/lib/content";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "AI for Service Businesses That Want More Booked Jobs",
+  title: "Stop Missed Calls and Turn More Leads Into Booked Revenue",
   description:
-    "Anchor Systems helps service businesses capture more leads, automate follow-up, and book more jobs using AI, pipeline visibility, and cleaner lead handling.",
+    "Anchor Systems captures inbound demand, closes follow-up gaps, and stops missed calls, stale estimates, and pipeline chaos from leaking revenue out of service businesses.",
   path: "/"
 });
 
@@ -62,30 +62,30 @@ export default function HomePage() {
         stats={[
           { value: "$297/mo", label: "Simple monthly pricing" },
           { value: "$250", label: "One-time setup fee" },
-          { value: "24/7", label: "Lead handling support and automation" },
-          { value: "1 system", label: "For leads, follow-up, and booked jobs" }
+          { value: "24/7", label: "Coverage for calls that would otherwise go cold" },
+          { value: "1 system", label: "To stop missed calls, stale estimates, and lead leaks" }
         ]}
       />
 
       <TrustSection
         eyebrow="Why it works"
-        title="Built around the moments where service businesses lose jobs and money"
-        description="Most operators do not need another dashboard. They need fewer revenue leaks. Anchor Systems focuses on the exact points where jobs are usually lost: missed calls, weak estimate follow-up, poor pipeline visibility, and slow office response."
+        title="Where service businesses lose money every day"
+        description="Most operators do not need another dashboard. They need the leaks closed. Anchor Systems goes straight at the places where booked revenue usually disappears: missed calls, weak estimate follow-up, poor pipeline visibility, and slow office response."
         items={[
           {
-            title: "Respond faster",
+            title: "Missed calls",
             description:
-              "Protect inbound demand with AI receptionist support and missed-call follow-up that keeps the conversation moving."
+              "When the phone rings and nobody answers, the job usually goes to the next company that does."
           },
           {
-            title: "Follow up better",
+            title: "Slow follow-up",
             description:
-              "Use automation to stay present after the first estimate so more opportunities stay alive long enough to close."
+              "When callbacks lag and estimates sit untouched, warm leads go cold and revenue leaves with them."
           },
           {
-            title: "Operate tighter",
+            title: "Pipeline chaos",
             description:
-              "Centralize lead status, scheduling, and communication so the office and the field are working from the same system."
+              "When lead status lives across scattered tools, jobs slip through the cracks while the team stays busy."
           }
         ]}
         theme="light"
@@ -93,8 +93,8 @@ export default function HomePage() {
 
       <FeatureGrid
         eyebrow="Platform features"
-        title="Everything needed to tighten lead handling and customer follow-up"
-        description="Anchor Systems combines the workflows that matter most for service businesses into one premium, easy-to-maintain platform."
+        title="One system built to capture demand and stop revenue leaks"
+        description="Anchor Systems puts the most expensive operational gaps in one place so your team can answer faster, follow up harder, and book more of the work already coming in."
         features={platformFeatures}
         theme="dark"
       />
@@ -103,7 +103,7 @@ export default function HomePage() {
         <div className="container-shell">
           <SectionHeading
             eyebrow="High-intent pages"
-            title="Start with the revenue leaks that usually cost the most"
+            title="Start with the leaks that usually cost the most jobs"
             description="These pages go straight at the problems most service businesses feel first: missed calls, slow follow-up, after-hours gaps, and weak visibility into which leads still need action."
             theme="light"
           />
@@ -125,8 +125,8 @@ export default function HomePage() {
         <div className="container-shell">
           <SectionHeading
             eyebrow="Industries"
-            title="Built for service businesses where speed and follow-up decide who wins"
-            description="These industry pages are seeded and ready to expand. Each page uses customized copy, structured internal linking, and a scalable route system instead of generic keyword swaps."
+            title="Built for service businesses where speed decides who gets paid"
+            description="These industry pages focus on where revenue actually leaks by trade, from emergency calls that go unanswered to estimates that sit too long to convert."
             theme="light"
           />
           <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-5">
@@ -154,8 +154,8 @@ export default function HomePage() {
           <div className="surface-outline p-8">
             <SectionHeading
               eyebrow="Location SEO system"
-              title="A structure designed to scale into hundreds of local pages"
-              description="Anchor Systems is set up with data-driven location and industry routes so you can expand by adding cities and trades to shared content files rather than rebuilding the site."
+              title="A structure built to capture local intent at scale"
+              description="Anchor Systems is set up with data-driven location and industry routes so you can expand into more markets without rebuilding the site while keeping every page focused on lost jobs, lost money, and the fix."
               theme="dark"
             />
             <div className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-5">
@@ -175,33 +175,33 @@ export default function HomePage() {
 
       <TestimonialSection
         eyebrow="Operator signals"
-        title="The problems service businesses keep trying to solve"
-        description="Anchor Systems is designed around the operational pain points we hear most often from owner-led and growth-focused service companies."
+        title="The same revenue leaks keep showing up in service businesses"
+        description="Anchor Systems is built around the operational failures owners keep paying for: missed calls, slow callbacks, stale estimates, and poor visibility into what still needs action."
         items={operatorSignals}
         theme="light"
       />
 
       <FaqSection
         eyebrow="FAQs"
-        title="Questions owners ask before they tighten the system"
-        description="If you are evaluating whether better lead handling and automation are worth it, start here."
+        title="Questions owners ask when they know money is leaking"
+        description="If you are evaluating whether missed calls, weak follow-up, and pipeline chaos are costing real revenue, start here."
         items={homeFaqs}
         theme="dark"
       />
 
       <CtaBanner
-        eyebrow="Primary call to action"
-        title="If your team is missing leads or letting estimates go cold, fix the system."
-        description="Anchor Systems helps service businesses respond faster, automate follow-up, and stop missed calls and stale quotes from quietly draining booked revenue."
+        eyebrow="Stop losing jobs"
+        title="Missed calls and stale estimates do not fix themselves."
+        description="Anchor Systems captures inbound demand, closes follow-up gaps, and stops missed calls and stale quotes from quietly draining booked revenue."
         primaryHref={siteConfig.bookingLink}
         primaryLabel="Book Demo"
         secondaryHref="/demo"
-        secondaryLabel="Go to demo page"
+        secondaryLabel="See where revenue is leaking"
       />
 
       <ContactCta
-        title="Want to see where your lead handling breaks down?"
-        description="We will walk through the current workflow, identify where missed calls and stale estimates leak revenue, and show how Anchor Systems helps your team operate with more control."
+        title="See exactly where missed calls and weak follow-up are costing you jobs."
+        description="We will walk through the current workflow, identify where missed calls, delayed callbacks, and stale estimates leak revenue, and show how Anchor Systems closes those gaps."
       />
     </>
   );

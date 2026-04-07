@@ -80,14 +80,29 @@ export function ProblemPageShell({
       <section className="section-space light-section">
         <div className="container-shell grid gap-10 lg:grid-cols-[0.95fr,1.05fr]">
           <div className="surface-card-light p-8">
-            <span className="section-eyebrow">The problem</span>
+            <span className="section-eyebrow">What this is costing you</span>
             <h2 className="mt-5 text-3xl font-semibold tracking-tight text-ink">
-              {problem.name} is a daily revenue leak
+              {problem.name} costs booked revenue every day
             </h2>
             <p className="mt-4 text-lg leading-8 text-ink-soft">
               {problem.intro} If the process stays loose, the cost shows up in
               booked work you never recover.
             </p>
+            <div className="mt-6 space-y-3">
+              {[
+                "Missed calls get replaced by another company’s booked jobs.",
+                "Slow follow-up turns warm leads into cold leads fast.",
+                "A loose pipeline lets quotes and callbacks disappear.",
+                "No system means revenue leaks daily while the team stays busy."
+              ].map((item) => (
+                <div
+                  key={item}
+                  className="rounded-[22px] border border-slate-200 bg-white px-4 py-4 text-sm font-medium text-ink shadow-sm"
+                >
+                  {item}
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className="grid gap-5">
@@ -144,10 +159,9 @@ export function ProblemPageShell({
                   Keep moving through the pages tied to this revenue problem
                 </h2>
                 <p className="mt-4 text-lg leading-8 text-ink-soft">
-                  These pages support the same core theme from different angles:
-                  local intent, trade-specific intent, and problem-specific
-                  buying intent. If this issue exists in your business, the next
-                  step is to see how it shows up in your market and your trade.
+                  If you are dealing with this, you are likely also losing jobs
+                  here. Use these pages to see how the same revenue leak shows
+                  up across your market, your trade, and the buying journey.
                 </p>
               </div>
               <ButtonLink href="/pricing" variant="secondary">
@@ -188,12 +202,12 @@ export function ProblemPageShell({
           <div className="surface-outline p-8">
             <span className="section-eyebrow">Industry links</span>
             <h2 className="mt-5 text-3xl font-semibold tracking-tight text-text">
-              Explore related industry pages
+              If you are dealing with this, you are likely also losing jobs here:
             </h2>
             <p className="mt-4 max-w-2xl text-lg leading-8 text-muted">
-              If you are researching this problem, these industry pages are the
-              next best place to compare how Anchor Systems fits different
-              service-business models.
+              These industry pages show how the same missed-call, follow-up, and
+              pipeline problems show up in other service businesses and where
+              the money leaks out fastest.
             </p>
             <div className="mt-8 grid gap-4 md:grid-cols-3">
               {relatedIndustries.map((relatedIndustry) => (
@@ -219,7 +233,7 @@ export function ProblemPageShell({
       />
 
       <CtaBanner
-        eyebrow="Book the walkthrough"
+        eyebrow="Stop losing jobs"
         title={`If ${problem.shortLabel.toLowerCase()} is weak, you are losing money every day.`}
         description="Book the demo and we will show exactly where this problem is costing your business jobs, how Anchor Systems fixes it, and how quickly you can stop the leak."
         primaryHref={siteConfig.bookingLink}

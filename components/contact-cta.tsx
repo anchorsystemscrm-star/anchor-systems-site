@@ -13,7 +13,7 @@ export function ContactCta({ title, description }: ContactCtaProps) {
       <div className="container-shell">
         <div className="surface-outline grid gap-8 p-8 lg:grid-cols-[1.1fr,0.9fr] lg:items-center">
           <div>
-            <span className="section-eyebrow">Book the next step</span>
+            <span className="section-eyebrow">Stop losing jobs</span>
             <h2 className="mt-5 text-3xl font-semibold tracking-tight text-text sm:text-4xl">
               {title}
             </h2>
@@ -23,7 +23,7 @@ export function ContactCta({ title, description }: ContactCtaProps) {
           </div>
           <div className="surface-card-light p-6">
             <p className="text-sm uppercase tracking-[0.18em] text-ink-soft">
-              Do this next
+              Do this now
             </p>
             <p className="mt-4 text-xl font-semibold text-ink">
               Book the demo before more calls, quotes, and follow-ups slip away.

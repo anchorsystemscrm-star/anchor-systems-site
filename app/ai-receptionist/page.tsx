@@ -9,7 +9,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata = buildMetadata({
   title: "AI Receptionist",
   description:
-    "Anchor Systems helps service businesses capture missed calls, handle after-hours inquiries, support booking, and create a better customer experience with AI receptionist workflows.",
+    "Anchor Systems captures missed calls, handles after-hours demand, and stops voicemail from turning into lost jobs and lost money for service businesses.",
   path: "/ai-receptionist"
 });
 
@@ -26,21 +26,21 @@ export default function AiReceptionistPage() {
             <p className="mt-6 max-w-3xl text-lg leading-8 text-muted">
               Service businesses lose jobs every day because nobody answers,
               nobody follows up fast enough, or after-hours demand lands in
-              voicemail. Anchor Systems helps keep those conversations alive
+              voicemail. Anchor Systems keeps those conversations alive
               with AI receptionist workflows, missed-call text back, and a
               cleaner path to booking before the customer hires someone else.
             </p>
           </div>
           <div className="surface-outline p-8">
             <p className="text-sm uppercase tracking-[0.18em] text-blue-3">
-              What it protects
+              Where businesses lose money
             </p>
             <div className="mt-6 space-y-4">
               {[
-                "Missed-call capture before the lead contacts someone else",
-                "After-hours lead handling when the office is closed",
-                "Booking support that keeps the next step clear",
-                "A more professional customer experience from the first contact"
+                "Missed calls that turn into someone else’s booked jobs",
+                "After-hours leads that disappear overnight",
+                "Callbacks delayed long enough for the buyer to move on",
+                "A weak first impression that makes your business look unavailable"
               ].map((item) => (
                 <div
                   key={item}
@@ -56,18 +56,18 @@ export default function AiReceptionistPage() {
 
       <TrustSection
         eyebrow="Where businesses lose money"
-        title="Most service companies do not lose the lead because demand is weak"
-        description="They lose it because the customer was ready first, while the business was not. That gap gets expensive when calls are missed, staff are overloaded, or the team assumes someone else will follow up."
+        title="Most service companies do not lose jobs because demand is weak"
+        description="They lose jobs because the customer is ready now and the business is not. That gap gets expensive when calls are missed, staff are overloaded, or the team assumes someone else will follow up."
         items={[
           {
             title: "Missed-call leakage",
             description:
-              "If a homeowner calls with an urgent need and gets no answer, there is a good chance they move to the next provider immediately."
+              "If a homeowner calls with an urgent need and gets no answer, the job often goes to the next provider immediately."
           },
           {
             title: "After-hours demand",
             description:
-              "Calls and quote requests do not stop when the office closes. A better system keeps those leads engaged overnight and on weekends."
+              "Calls and quote requests do not stop when the office closes. Without coverage, those leads go somewhere else overnight and on weekends."
           },
           {
             title: "Booking friction",
@@ -84,17 +84,17 @@ export default function AiReceptionistPage() {
             {
               title: "Missed call text back",
               description:
-                "Send an immediate follow-up when the phone rings unanswered so the lead knows your business is still engaged."
+                "Send an immediate follow-up when the phone rings unanswered so the lead does not disappear before your team calls back."
             },
             {
               title: "Lead qualification support",
               description:
-                "Create a better first interaction that gathers context and sets up the next action more clearly."
+                "Capture context fast and keep the next step moving instead of letting the call die in voicemail."
             },
             {
-              title: "Better customer experience",
+              title: "Response that converts",
               description:
-                "Responsiveness feels premium. It builds confidence before the team ever arrives on site."
+                "Fast response builds confidence immediately and keeps urgent buyers moving toward a booked job."
             }
           ].map((item) => (
             <article key={item.title} className="surface-card-light p-6">
@@ -110,24 +110,24 @@ export default function AiReceptionistPage() {
       <FaqSection
         eyebrow="AI receptionist FAQs"
         title="Questions about missed-call capture and after-hours lead handling"
-        description="If your business depends on quick response times, this is where the operational leverage usually starts."
+        description="If your business depends on quick response times, this is where daily revenue leaks usually start."
         items={aiReceptionistFaqs}
         theme="dark"
       />
 
       <CtaBanner
-        eyebrow="Book the walkthrough"
-        title="See how much demand you may be losing between the ring and the response"
-        description="We will show how Anchor Systems helps your business stay responsive, even when the team is busy, the office is closed, or calls hit all at once and money is on the line."
+        eyebrow="Fix missed calls now"
+        title="Every missed call is a job that may never come back."
+        description="We will show exactly where calls are slipping, how fast those missed opportunities turn into lost revenue, and how Anchor Systems closes the gap."
         primaryHref={siteConfig.bookingLink}
         primaryLabel="Book Demo"
         secondaryHref="/service-business-crm"
-        secondaryLabel="Explore the full platform"
+        secondaryLabel="See the operating system"
       />
 
       <ContactCta
         title="If calls are being missed, fix that first."
-        description="Anchor Systems gives service businesses a stronger way to capture inbound demand, support booking, and stop missed-call leakage before more jobs disappear."
+        description="Anchor Systems captures inbound demand, keeps after-hours leads alive, and stops voicemail from quietly handing jobs to faster competitors."
       />
     </>
   );

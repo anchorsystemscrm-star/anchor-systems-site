@@ -3,7 +3,7 @@ export const pricingPlan = {
   monthlyPrice: "$297/month",
   setupFee: "$250 one-time",
   summary:
-    "A revenue-focused operating system for service businesses that need to stop losing jobs to missed calls, slow follow-up, and a loose sales process.",
+    "A revenue-focused operating system for service businesses that are done losing jobs to missed calls, slow follow-up, and a loose sales process.",
   includes: [
     "AI receptionist and missed call text back",
     "CRM pipeline for leads, estimates, and booked work",

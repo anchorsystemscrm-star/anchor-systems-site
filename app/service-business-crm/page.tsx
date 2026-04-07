@@ -11,7 +11,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata = buildMetadata({
   title: "Service Business CRM",
   description:
-    "Anchor Systems is a service business CRM for centralizing leads, automating follow-up, improving pipeline visibility, and helping teams book more jobs.",
+    "Anchor Systems is a service business operating system that captures leads, closes follow-up gaps, and stops pipeline chaos from turning into lost revenue.",
   path: "/service-business-crm"
 });
 
@@ -26,22 +26,22 @@ export default function ServiceBusinessCrmPage() {
               See every lead, fix follow-up leaks, and book more work.
             </h1>
             <p className="mt-6 max-w-3xl text-lg leading-8 text-muted">
-              Anchor Systems centralizes leads, automates follow-up, and gives
-              owners and office teams better visibility into what is happening
-              between the first call, the estimate, and the booked job. It is a
-              platform for protecting revenue, not a generic sales database.
+              Anchor Systems centralizes leads, closes follow-up gaps, and gives
+              owners and office teams clear visibility into what is happening
+              between the first call, the estimate, and the booked job. It is
+              built to stop revenue leaks, not to act like a generic sales database.
             </p>
           </div>
           <div className="surface-outline p-8">
             <p className="text-sm uppercase tracking-[0.18em] text-blue-3">
-              What it improves
+              Where businesses lose money
             </p>
             <div className="mt-6 space-y-4">
               {[
-                "Lead centralization across calls, forms, and follow-up",
-                "Automation for estimate reminders and customer communication",
-                "Pipeline visibility so active opportunities are easier to track",
-                "Operational efficiency from faster handoffs and fewer dropped balls"
+                "Leads disappear when calls, forms, and callbacks are split across too many tools",
+                "Estimates go stale when no system forces follow-up to happen on time",
+                "Booked jobs slip when pipeline status is unclear and handoffs are loose",
+                "The office stays busy while revenue still leaks out of the process"
               ].map((item) => (
                 <div
                   key={item}
@@ -57,23 +57,23 @@ export default function ServiceBusinessCrmPage() {
 
       <TrustSection
         eyebrow="Core value"
-        title="The platform exists to make close rates and customer retention easier to improve"
-        description="When leads are organized, follow-up is automated, and pipeline status is visible, the team spends less time guessing and more time closing and serving customers well."
+        title="Where service businesses lose money after the lead comes in"
+        description="When leads are scattered, follow-up is manual, and pipeline status is unclear, the team stays busy while booked revenue quietly leaks out."
         items={[
           {
-            title: "Centralized pipeline",
+            title: "Scattered lead data",
             description:
-              "Keep new opportunities, pending estimates, and booked work in a single operating view."
+              "When customer context lives across disconnected tools, good jobs slip before anyone realizes they still needed action."
           },
           {
-            title: "Automation where it matters",
+            title: "Manual follow-up",
             description:
-              "Remove manual follow-up gaps that normally depend on someone remembering the next touchpoint."
+              "When callbacks and estimate reminders depend on memory, warm opportunities cool off and disappear."
           },
           {
-            title: "Operational clarity",
+            title: "Pipeline blind spots",
             description:
-              "Help office staff, owners, and the field stay aligned without constant status chasing."
+              "When no one can see what is pending, stale, or urgent, jobs slip through the cracks while the team thinks they are covered."
           }
         ]}
         theme="light"
@@ -81,8 +81,8 @@ export default function ServiceBusinessCrmPage() {
 
       <FeatureGrid
         eyebrow="Platform depth"
-        title="The workflows service businesses rely on most"
-        description="Anchor Systems focuses on the areas that create the biggest operational leverage: responsiveness, pipeline movement, and customer communication."
+        title="The workflows that stop missed opportunities from turning into lost revenue"
+        description="Anchor Systems goes straight at the expensive operational gaps: responsiveness, estimate follow-up, pipeline movement, and customer communication."
         features={platformFeatures.slice(1)}
         theme="dark"
       />
@@ -90,24 +90,24 @@ export default function ServiceBusinessCrmPage() {
       <FaqSection
         eyebrow="CRM FAQs"
         title="Questions about workflow, visibility, and day-to-day use"
-        description="These are the most common CRM questions from service operators who have outgrown patchwork systems."
+        description="These are the most common questions from service operators who know patchwork systems are costing them jobs."
         items={crmFaqs}
         theme="dark"
       />
 
       <CtaBanner
-        eyebrow="See the platform"
-        title="If the business feels scattered between leads, estimates, and follow-up, this is the fix."
-        description="Book a walkthrough and see how Anchor Systems helps your team operate with more control, more consistency, and fewer lost jobs hiding in the pipeline."
+        eyebrow="Fix the process"
+        title="If the business feels scattered, revenue is leaking."
+        description="Book a walkthrough and see exactly how missed follow-up, stale estimates, and weak pipeline visibility are costing jobs that should already be booked."
         primaryHref={siteConfig.bookingLink}
         primaryLabel="Book Demo"
         secondaryHref="/pricing"
-        secondaryLabel="View pricing"
+        secondaryLabel="See pricing"
       />
 
       <ContactCta
         title="If your pipeline is messy, revenue is leaking."
-        description="Anchor Systems is designed for service companies that want less friction between inbound demand, estimate follow-up, and collected revenue."
+        description="Anchor Systems captures the leads, follow-up, and pipeline movement that usually get scattered across disconnected tools and turns them into one system that closes the gaps."
       />
     </>
   );

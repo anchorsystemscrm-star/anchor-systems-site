@@ -89,7 +89,7 @@ export function LocationProblemPageShell({
       <section className="section-space light-section">
         <div className="container-shell grid gap-10 lg:grid-cols-2">
           <div className="surface-card-light p-8">
-            <span className="section-eyebrow">Local pain points</span>
+            <span className="section-eyebrow">What this is costing you</span>
             <h2 className="mt-5 text-3xl font-semibold tracking-tight text-ink">
               Why {city.name} {industry.name.toLowerCase()} teams lose money
               here
@@ -99,6 +99,21 @@ export function LocationProblemPageShell({
               time is simple: fewer callbacks, fewer bookings, and more revenue
               going to the next available competitor.
             </p>
+            <div className="mt-6 space-y-3">
+              {[
+                "Missed calls turn into lost local jobs immediately.",
+                "Slow follow-up gives competitors time to close the work.",
+                "A disorganized pipeline lets estimates slip out of view.",
+                "No system means revenue leaks daily while the team stays busy."
+              ].map((item) => (
+                <div
+                  key={item}
+                  className="rounded-[22px] border border-slate-200 bg-white px-4 py-4 text-sm font-medium text-ink shadow-sm"
+                >
+                  {item}
+                </div>
+              ))}
+            </div>
           </div>
           <div className="grid gap-4">
             {problem.painPoints.map((point) => (
@@ -149,13 +164,12 @@ export function LocationProblemPageShell({
           <div className="surface-card-light p-8">
             <span className="section-eyebrow">Related internal links</span>
             <h2 className="mt-5 text-3xl font-semibold tracking-tight text-ink">
-              Keep moving through the pages tied to this local revenue leak
+              If you are dealing with this in {city.name}, you are likely also losing jobs here:
             </h2>
             <p className="mt-4 max-w-2xl text-lg leading-8 text-ink-soft">
               These links connect the local intent, trade intent, and problem
               intent pages so visitors and search engines can move naturally
-              through the topic cluster. They also make the next step obvious if
-              you are actively trying to fix this problem.
+              through the topic cluster while making the next move obvious.
             </p>
             <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
               <Link
@@ -208,7 +222,7 @@ export function LocationProblemPageShell({
       />
 
       <CtaBanner
-        eyebrow="Book the walkthrough"
+        eyebrow="Fix it now"
         title={`If ${problem.shortLabel.toLowerCase()} is weak in ${city.name}, you are losing jobs right now.`}
         description="Book the demo and we will walk through how your current process handles inbound demand, where the jobs are slipping, and how Anchor Systems closes the gap fast."
         primaryHref={siteConfig.bookingLink}

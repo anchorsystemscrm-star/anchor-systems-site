@@ -11,7 +11,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata = buildMetadata({
   title: "Pricing",
   description:
-    "See Anchor Systems pricing for service businesses, including $297 per month and a $250 one-time setup fee.",
+    "See Anchor Systems pricing for service businesses that want to stop losing money to missed calls, stale estimates, and loose lead handling.",
   path: "/pricing"
 });
 
@@ -22,8 +22,8 @@ export default function PricingPage() {
         <div className="container-shell">
           <SectionHeading
             eyebrow="Pricing"
-            title="Simple pricing for service businesses that want to stop losing easy revenue"
-            description="Anchor Systems keeps pricing direct so owners can focus on the real return: fewer missed calls, stronger follow-up, clearer pipeline visibility, and more booked jobs."
+            title="Simple pricing for businesses that are done losing easy revenue"
+            description="Anchor Systems keeps pricing direct so owners can focus on the return: fewer missed calls, fewer stale estimates, cleaner visibility, and more booked jobs."
             theme="dark"
           />
         </div>
@@ -41,17 +41,17 @@ export default function PricingPage() {
             {
               title: "Designed to pay for itself in missed opportunities recovered",
               description:
-                "The value is in recovering jobs you are already generating but not converting because the system is too loose."
+                "The value is in recovering jobs you are already generating but still losing because calls, callbacks, and follow-up are too loose."
             },
             {
-              title: "Simple enough for owner-led and lean office teams",
+              title: "Built to close the gaps without adding operational drag",
               description:
-                "Anchor Systems is built for practical operations, which means the system is meant to be used, not just purchased."
+                "Anchor Systems is built for practical operations, which means your team can start using it to stop leaks fast instead of babysitting a bloated rollout."
             },
             {
               title: "Focused on workflows that support booked revenue",
               description:
-                "Every included feature is there to reduce lead leaks, tighten follow-up, and improve responsiveness across the customer journey."
+                "Every included feature exists to stop lead leaks, tighten follow-up, and convert more of the demand you already paid to generate."
             }
           ].map((item) => (
             <article key={item.title} className="surface-card-light p-6">
@@ -67,24 +67,24 @@ export default function PricingPage() {
       <FaqSection
         eyebrow="Pricing FAQs"
         title="Questions about cost, setup, and fit"
-        description="Here is what most service businesses want to understand before they book a walkthrough."
+        description="Here is what most service businesses want to understand before they decide to stop the revenue leaks."
         items={pricingFaqs}
         theme="dark"
       />
 
       <CtaBanner
-        eyebrow="Next step"
-        title="See whether Anchor Systems fits your workflow before you decide"
-        description="We will walk through how your business handles leads, estimates, and follow-up today, then show where the current process is costing you jobs."
+        eyebrow="Fix the leak"
+        title="If missed calls and weak follow-up are costing jobs, the next step is obvious."
+        description="We will walk through how your business handles leads, estimates, and follow-up today, then show where the current process is costing you jobs and money."
         primaryHref={siteConfig.bookingLink}
         primaryLabel="Book Demo"
         secondaryHref="/demo"
-        secondaryLabel="View demo page"
+        secondaryLabel="See where revenue is slipping"
       />
 
       <ContactCta
-        title="Want to talk through pricing with your actual lead flow in mind?"
-        description="Book a demo and we will show how Anchor Systems supports your workflow, where it removes friction, and why fixing lead leaks usually pays for itself fast."
+        title="See what fixing missed calls and stale follow-up is worth in your business."
+        description="Book a demo and we will show how Anchor Systems fits your workflow, where revenue is slipping, and why closing those gaps usually pays for itself fast."
       />
     </>
   );

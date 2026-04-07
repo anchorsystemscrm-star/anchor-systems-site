@@ -6,7 +6,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata = buildMetadata({
   title: "Book a Demo",
   description:
-    "Book a demo with Anchor Systems to see how service businesses can capture more leads, automate follow-up, and book more jobs.",
+    "Book a demo with Anchor Systems to see exactly where missed calls, slow follow-up, and pipeline chaos are costing your business revenue.",
   path: "/demo"
 });
 
@@ -48,7 +48,7 @@ export default function DemoPage() {
         <div className="container-shell">
           <SectionHeading
             eyebrow="What to expect"
-            title="A practical walkthrough, not a bloated sales pitch"
+            title="A direct walkthrough of where your revenue is leaking"
             description="We will focus on the workflows that matter most: inbound calls, lost opportunities, estimate follow-up, scheduling friction, and pipeline visibility."
             theme="light"
           />
@@ -57,17 +57,17 @@ export default function DemoPage() {
               {
                 title: "Lead handling review",
                 description:
-                  "We start by identifying how leads enter the business and exactly where they stall, cool off, or disappear."
+                  "We start by identifying how leads enter the business and where they stall, cool off, or disappear into another company’s pipeline."
               },
               {
-                title: "System fit",
+                title: "What the leak is costing you",
                 description:
-                  "Then we show how Anchor Systems tightens responsiveness, customer communication, and booked-job visibility."
+                  "Then we show how missed calls, slow callbacks, and weak follow-up turn into daily lost jobs and lost money."
               },
               {
                 title: "Clear next steps",
                 description:
-                  "If the fit is right, you will leave with a clear plan to stop the leaks and get the system live."
+                  "If the fit is right, you will leave with a clear plan to stop the leaks and get the system live fast."
               }
             ].map((item) => (
               <article key={item.title} className="surface-card-light p-6">
@@ -83,7 +83,7 @@ export default function DemoPage() {
 
       <ContactCta
         title="If you know leads are slipping, this is the next step."
-        description="Book the walkthrough and we will keep the conversation focused on missed calls, weak follow-up, and the fastest path to more booked jobs."
+        description="Book the walkthrough and we will keep the conversation focused on missed calls, weak follow-up, and the fastest path to more booked revenue."
       />
     </>
   );

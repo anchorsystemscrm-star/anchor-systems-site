@@ -38,7 +38,7 @@ export function IndustryPageShell({ industry }: IndustryPageShellProps) {
               <p className="mt-6 max-w-3xl text-lg leading-8 text-muted">
                 {industry.heroDescription} If your team misses the first call or
                 lets estimates sit, that job usually becomes someone else&apos;s
-                revenue.
+                revenue the same day.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <ButtonLink href={siteConfig.bookingLink} external>
@@ -56,7 +56,7 @@ export function IndustryPageShell({ industry }: IndustryPageShellProps) {
 
             <div className="surface-outline p-8">
               <p className="text-sm uppercase tracking-[0.18em] text-blue-3">
-                Why it fits {industry.name.toLowerCase()} operators
+                Where the money leaks
               </p>
               <ul className="mt-6 space-y-4">
                 {industry.outcomes.map((outcome) => (
@@ -78,7 +78,7 @@ export function IndustryPageShell({ industry }: IndustryPageShellProps) {
           <div className="surface-card-light p-8">
             <span className="section-eyebrow">Industry reality</span>
             <h2 className="mt-5 text-3xl font-semibold tracking-tight text-ink">
-              What {industry.name.toLowerCase()} businesses are up against
+              Why {industry.name.toLowerCase()} businesses lose jobs here
             </h2>
             <p className="mt-4 text-lg leading-8 text-ink-soft">
               {industry.intro} In this category, slow response and weak
@@ -105,7 +105,7 @@ export function IndustryPageShell({ industry }: IndustryPageShellProps) {
           <div>
             <span className="section-eyebrow">How Anchor Systems helps</span>
             <h2 className="mt-5 text-3xl font-semibold tracking-tight text-text">
-              A better operating system for {industry.name.toLowerCase()} teams
+              How Anchor Systems closes the leak
             </h2>
             <div className="mt-6 space-y-4">
               {industry.solutions.map((solution) => (
@@ -122,7 +122,7 @@ export function IndustryPageShell({ industry }: IndustryPageShellProps) {
           <div>
             <span className="section-eyebrow">Use cases</span>
             <h2 className="mt-5 text-3xl font-semibold tracking-tight text-text">
-              Where it creates leverage
+              Where booked revenue is usually won or lost
             </h2>
             <div className="mt-6 space-y-4">
               {industry.useCases.map((useCase) => (
@@ -152,7 +152,8 @@ export function IndustryPageShell({ industry }: IndustryPageShellProps) {
                 <p className="mt-4 text-lg leading-8 text-ink-soft">
                   The site is structured to scale location-targeted pages cleanly.
                   Start with these seeded city pages and expand by adding data,
-                  not rebuilding templates.
+                  not rebuilding templates. In every market, fast response and
+                  tighter follow-up are what stop jobs from leaking away.
                 </p>
               </div>
               <ButtonLink href="/contact" variant="secondary">
@@ -182,13 +183,13 @@ export function IndustryPageShell({ industry }: IndustryPageShellProps) {
               <div className="mt-6 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
                 <div className="max-w-2xl">
                   <h2 className="text-3xl font-semibold tracking-tight text-text">
-                    Related revenue problems for {industry.name.toLowerCase()}{" "}
-                    businesses
+                    If you are dealing with this, you are likely also losing
+                    jobs here:
                   </h2>
                   <p className="mt-4 text-lg leading-8 text-muted">
-                    These pages go deeper on the specific breakdowns that most
-                    often cost {industry.name.toLowerCase()} companies booked
-                    jobs.
+                    These pages go deeper on the specific missed-call, follow-up,
+                    and pipeline problems that most often cost{" "}
+                    {industry.name.toLowerCase()} companies booked jobs.
                   </p>
                 </div>
                 <ButtonLink
@@ -218,24 +219,24 @@ export function IndustryPageShell({ industry }: IndustryPageShellProps) {
       <FaqSection
         eyebrow="FAQs"
         title={`Questions about Anchor Systems for ${industry.name.toLowerCase()} companies`}
-        description={`Here are the questions owners and operators typically ask when they want a cleaner system for responsiveness, follow-up, and booked-job visibility.`}
+        description={`Here are the questions owners and operators ask when they know missed calls, slow follow-up, and loose pipeline control are costing them revenue.`}
         items={industry.faqs}
         theme="dark"
       />
 
       <CtaBanner
-        eyebrow="Book the walkthrough"
-        title={`See how Anchor Systems supports ${industry.name.toLowerCase()} growth without adding complexity`}
-        description="We will walk through how your team handles calls, estimates, follow-up, and booked jobs today, then show exactly where missed calls and stale estimates are costing you revenue."
+        eyebrow="Stop the leak"
+        title={`If your ${industry.name.toLowerCase()} process is loose, revenue is slipping out daily.`}
+        description="We will walk through how your team handles calls, estimates, follow-up, and booked jobs today, then show exactly where missed calls, stale estimates, and weak pipeline control are costing you money."
         primaryHref={siteConfig.bookingLink}
         primaryLabel="Book Demo"
         secondaryHref="/service-business-crm"
-        secondaryLabel="Explore the platform"
+        secondaryLabel="See the operating system"
       />
 
       <ContactCta
-        title={`Want a cleaner system for your ${industry.name.toLowerCase()} business?`}
-        description="Anchor Systems is designed to make your business more responsive, more organized, and far harder to lose jobs through missed calls, lead leaks, and slow follow-up."
+        title={`Fix the leaks in your ${industry.name.toLowerCase()} business before more jobs disappear.`}
+        description="Anchor Systems captures missed demand, closes follow-up gaps, and gives your team one operating system to stop booked revenue from leaking away."
       />
     </>
   );

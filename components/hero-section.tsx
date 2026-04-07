@@ -66,11 +66,11 @@ export function HeroSection({
             </ul>
           </div>
 
-          <div className="surface-outline relative overflow-hidden p-6 sm:p-8">
+            <div className="surface-outline relative overflow-hidden p-6 sm:p-8">
             <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-blue-3 to-transparent" />
             <div className="rounded-[2rem] border border-white/10 bg-bg-3/70 p-6 backdrop-blur-2xl">
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-blue-3">
-                What changes when the system is tighter
+                Where businesses stop losing money
               </p>
               <div className="mt-6 grid gap-4 sm:grid-cols-2">
                 {stats.map((stat) => (
@@ -89,12 +89,12 @@ export function HeroSection({
               </div>
               <div className="mt-6 rounded-[26px] border border-blue/20 bg-gradient-to-r from-blue/12 to-blue-3/10 px-6 py-6 text-white">
                 <p className="font-display text-3xl leading-none text-white/90">
-                  Built for operators
+                  Built to stop leaks
                 </p>
                 <p className="mt-3 text-sm leading-7 text-muted">
-                  Anchor Systems is designed for teams that want fewer lead
-                  leaks, faster response windows, and a cleaner path from first
-                  contact to booked revenue.
+                  Anchor Systems is designed for teams that are done letting
+                  missed calls, weak follow-up, and pipeline chaos eat booked
+                  revenue.
                 </p>
               </div>
             </div>
